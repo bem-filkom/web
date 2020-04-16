@@ -1,7 +1,7 @@
 {
   "name": "bemfilkom2020",
-  "version": "1.0",
-  "description": "Website Resmi BEM FILKOM UB 2020.",
+  "version": "1.0.0",
+  "description": "Website Resmi BEM FILKOM UB 2020",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
