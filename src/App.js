@@ -19,6 +19,7 @@ import KemenBiro from "./container/Kabinet/KemenBiro";
 import Footer from "./components/Footer/Footer";
 
 import Error404 from "./container/Error404";
+// import ComingSoon from "./container/ComingSoon";
 
 // const PrivateRoute = ({ component: Component, status: isLogged, ...rest }) => (
 //     <Route {...rest} render={(props) => (
@@ -40,7 +41,7 @@ const App = () => {
 			<Helmet titleTemplate="%s | BEM FILKOM UB 2020" defaultTitle="BEM FILKOM UB 2020 | Elaborasi Makna"/>
 			<Router>
 				<ScrollIntoView>
-					<Grommet theme={bemTheme}>
+					<Grommet theme={bemTheme} full>
 						<Navbar/>
 						<Switch>
 							<Route exact path="/" component={Home}/>
@@ -51,6 +52,7 @@ const App = () => {
 							{/*404 not found*/}
 							<Route path="/404" component={Error404}/>
 							<Route component={Error404}/>
+							{/*<Route component={ComingSoon}/>*/}
 						</Switch>
 						<Footer/>
 					</Grommet>

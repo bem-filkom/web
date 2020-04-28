@@ -40,14 +40,14 @@ const Footer = () => {
 					color="light-6" href="http://filkom.ub.ac.id/" label="FILKOM UB"
 					icon={<Globe/>} target="_blank"
 				/>
-				<Anchor
-					color="light-6" href="https://bemfilkom.ub.ac.id/filkompedia" label="Filkompedia" icon={<Globe/>}
-					target="_blank"
-				/>
-				<Anchor
-					color="light-6" href="https://bemfilkom.ub.ac.id/apps/siperat" label="SIPERAT" icon={<Globe/>}
-					target="_blank"
-				/>
+				{/*<Anchor*/}
+				{/*	color="light-6" href="https://bemfilkom.ub.ac.id/filkompedia" label="Filkompedia" icon={<Globe/>}*/}
+				{/*	target="_blank"*/}
+				{/*/>*/}
+				{/*<Anchor*/}
+				{/*	color="light-6" href="https://bemfilkom.ub.ac.id/apps/siperat" label="SIPERAT" icon={<Globe/>}*/}
+				{/*	target="_blank"*/}
+				{/*/>*/}
 			</Box>
 			<Box
 				justify="start"
