@@ -1,6 +1,5 @@
-import React from "react";
-import {Helmet} from "react-helmet";
-import {Box, Heading, Image, Text} from "grommet";
+import React  from "react";
+import {Box, Heading, Image} from "grommet";
 
 const ComingSoon = () => {
 	return (

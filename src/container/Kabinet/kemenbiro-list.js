@@ -1,3 +1,4 @@
+//tebak fungsinya apa
 export const kemenbiroList = [
 	{
 		"id": "preswapres",

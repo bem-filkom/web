@@ -7,17 +7,21 @@ import ReactHtmlParser from "react-html-parser";
 import {kemenbiroList} from "./kemenbiro-list";
 
 const KemenBiro = () => {
+	//hook URL
 	let params = useParams();
 	
+	//ambil string /kabinet/xxxxxx di URL, lihat react router di <app>
 	let kemenbiro = [];
 	kemenbiro = kemenbiroList.find(x => x.id === params.kementerian);
-	//redirect ke struktur bila parameter tidak ditemukan
+	
+	//redirect ke halaman 404 bila parameter kementerian tidak ditemukan
 	if (typeof (kemenbiro) != "object") {
 		return (
 			<Redirect to="/404"/>
 		);
 	}
 	
+	//cek apakah kemen/biro punya staff (bpi/bukan)
 	let isStaff = false;
 	for (let k in kemenbiro) {
 		if (k === "staff") {
@@ -25,6 +29,7 @@ const KemenBiro = () => {
 		}
 	}
 	
+	//cek apakah punya proker
 	let isProker = false;
 	for (let k in kemenbiro) {
 		if (k === "proker") {
