@@ -37,6 +37,16 @@ export const elmaTheme = {
 				"light": "#444444"
 			},
 			
+			// WARNA TEMA V2	
+			"acc-1":"#FFE3EE",//pink lebih muda
+			"acc-2":"#C7E7FC",//biru lebih muda
+			"acc-3":"#FFAFCF",//pink muda
+			"acc-4":"#91D1FC",//biru muda
+			"acc-5":"#EFD5B8",//coklat krem
+			"acc-6":"#414A50",//Grey blue
+			"acc-7":"#000000",//hitam
+			"acc-8":"#FFFFFF",//putih
+
 			// WARNA TEMA BEM
 			"accent-1": "#C9B79C",
 			"accent-2": "#192452",
@@ -72,7 +82,17 @@ export const elmaTheme = {
 	},
 	"heading": {
 		"font": {
-			"family": "Dosis, Helvetica, Arial, sans-serif"
+			"family": "Solway, Helvetica, Arial, sans-serif"
+		}
+	},
+	"headingPop": {
+		"font": {
+			"family": "Poppins, sans-serif"
+		}
+	},
+	"text": {
+		"font": {
+			"family": "Poppins, sans-serif"
 		}
 	}
 };

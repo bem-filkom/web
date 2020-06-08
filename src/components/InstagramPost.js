@@ -25,7 +25,7 @@ const InstagramPost = () => {
 	return (
 		<Box
 			direction="column"
-			background="accent-1"
+			background="acc-2"
 			align="center"
 			justify="center"
 			pad={{"vertical": "large", "horizontal": "large"}}

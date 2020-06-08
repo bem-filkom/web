@@ -12,7 +12,7 @@ function Navbar() {
 			direction="row-responsive"
 			fill="horizontal"
 			pad={{horizontal: "xlarge"}}
-			background="accent-2"
+			background="acc-4"
 			align="center"
 			alignContent="center"
 			justify="center"
@@ -30,7 +30,7 @@ function Navbar() {
 					/>
 				</Link>
 				<Link to="/" style={{"textDecorationLine":"none"}}>
-					<Heading className="navbar-title" style={{"lineHeight":"25px"}} alignSelf="center" color="light-3">BEM FILKOM UB</Heading>
+					<Heading className="navbar-title" style={{"lineHeight":"25px"}} alignSelf="center" color="white">BEM FILKOM UB</Heading>
 				</Link>
 			</Box>
 			

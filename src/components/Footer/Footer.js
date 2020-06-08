@@ -9,25 +9,25 @@ const Footer = () => {
 			direction="row-responsive"
 			fill="horizontal"
 			pad="xlarge"
-			background="brand"
+			background="acc-3"
 			justify="center"
 			alignContent="center"
 			gap="large"
 			border={{
-				"color": "accent-3",
+				"color": "acc-5",
 				"size": "medium",
 				"style": "solid",
 				"side": "top"
 			}}
 		>
 			<Box width="small">
-				<Text className="footer-title" color="light-2" size="large">
+				<Text className="footer-title" color="acc-6" size="large">
 					&copy; 2020<br/><br/>BEM FILKOM UB
 				</Text>
-				<Text color="light-2" size="small">Elaborasi Makna</Text>
+				<Text color="acc-6" size="small">Elaborasi Makna</Text>
 				<br/>
-				<Text color="light-2" size="small">
-					Made with <Text color="accent-3">&#10084;</Text> by Biro Pengembangan Informasi & Teknologi
+				<Text color="acc-6" size="small">
+					Made with <Text color="acc-6">&#x2764;&#xFE0F;</Text> by Biro Pengembangan Informasi & Teknologi
 				</Text>
 			</Box>
 			<Box
@@ -35,9 +35,9 @@ const Footer = () => {
 				align="start"
 				width="small"
 			>
-				<Text className="footer-title" color="light-2" size="large"><Link/> Tautan</Text><br/>
+				<Text className="footer-title" color="acc-6" size="large"><Link/> Tautan</Text><br/>
 				<Anchor
-					color="light-6" href="http://filkom.ub.ac.id/" label="FILKOM UB"
+					color="acc-6" href="http://filkom.ub.ac.id/" label="FILKOM UB"
 					icon={<Globe/>} target="_blank"
 				/>
 				{/*<Anchor*/}
@@ -54,27 +54,27 @@ const Footer = () => {
 				align="start"
 				width="small"
 			>
-				<Text className="footer-title" color="light-2" size="large"><UserAdd/> Ikuti kami</Text><br/>
+				<Text className="footer-title" color="acc-6" size="large"><UserAdd/> Ikuti kami</Text><br/>
 				<Anchor
-					color="light-6" href="https://www.instagram.com/bemfilkomub/" label="@bemfilkomub"
+					color="acc-6" href="https://www.instagram.com/bemfilkomub/" label="@bemfilkomub"
 					icon={<Instagram/>} target="_blank"
 				/>
 				<Anchor
-					color="light-6" href="line://ti/p/@bemfilkomub" label="@bemfilkomub" target="_blank"
-					icon={<img src="/assets/linelogo.png" className="whitify" style={{"width": 24}} alt="LINE"/>}
+					color="acc-6" href="line://ti/p/@bemfilkomub" label="@bemfilkomub" target="_blank"
+					icon={<img src="/assets/linelogo.png" className="acc-6" style={{"width": 24}} alt="LINE"/>}
 				/>
 				<Anchor
-					color="light-6" href="https://twitter.com/BEMFILKOMUB" label="@BEMFILKOMUB" icon={<Twitter/>}
+					color="acc-6" href="https://twitter.com/BEMFILKOMUB" label="@BEMFILKOMUB" icon={<Twitter/>}
 					target="_blank"
 				/>
 				<Anchor
-					color="light-6" href="https://www.youtube.com/channel/UCLAmrHwP0hvOjPGHacMThZQ"
+					color="acc-6" href="https://www.youtube.com/channel/UCLAmrHwP0hvOjPGHacMThZQ"
 					label="BEM FILKOM UB" icon={<Youtube/>} target="_blank"
 				/>
 			</Box>
 			<Box width="small">
-				<Text className="footer-title" color="light-2" size="large"><Map/> Sekretariat</Text><br/>
-				<Text color="light-2" size="small">
+				<Text className="footer-title" color="acc-6" size="large"><Map/> Sekretariat</Text><br/>
+				<Text color="acc-6" size="small">
 					Gedung C1.2 Fakultas Ilmu
 					Komputer Universitas Brawijaya<br/><br/>
 					Jalan Veteran Nomor 8, Lowokwaru,

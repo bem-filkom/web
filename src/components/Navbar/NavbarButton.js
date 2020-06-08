@@ -7,12 +7,13 @@ function NavbarButton(props) {
 		<RoutedButton plain {...props}>
 			{({hover}) => (
 				<Box
+					className="shadowNav"
 					pad={{vertical: "small", horizontal: "medium"}}
 					round="medium"
 					background={
 						props.highlight ?
-							hover ? "accent-3" : "accent-1"
-							: hover ? "accent-3" : "brand"
+							hover ? "acc-1" : "acc-5"
+							: hover ? "acc-1" : "acc-3"
 					} margin="none"
 					justify="center" align="center" alignContent="center" alignSelf="center"
 				>

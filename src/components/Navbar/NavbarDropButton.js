@@ -5,21 +5,22 @@ function NavbarDropButton(props) {
 	return (
 		<DropButton {...props} plain dropAlign={{"top": "top", "right": "right"}} dropContent={
 			<Box
-				background="brand" overflow={{"vertical": "auto"}} height={{"max": "medium"}} gap="xsmall"
+				background="acc-8" overflow={{"vertical": "auto"}} height={{"max": "medium"}} t={{"max": "medium"}} gap="xsmall"
 				pad="small" className="navbar-dropmenu" align="center"
-				border={{"side":"bottom", "color":"accent-2", "size":"medium"}}
+				border={{"side":"bottom", "color":"acc-4", "size":"medium"}}
 			>
 				{props.children}
 			</Box>
 		}>
 			{({hover}) => (
 				<Box
+					className="shadowNav"
 					pad={{vertical: "small", horizontal: "medium"}}
 					round="medium"
 					background={
 						props.highlight ?
-							hover ? "accent-3" : "accent-1"
-							: hover ? "accent-3" : "brand"
+							hover ? "acc-1" : "acc-5"
+							: hover ? "acc-1" : "acc-3"
 					} margin="none"
 					justify="center" align="center" alignContent="center"
 				>

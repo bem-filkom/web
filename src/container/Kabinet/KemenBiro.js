@@ -1,6 +1,6 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import {Box, Heading, Image, Text} from "grommet";
+import {Box, Heading, Image, Text, Paragraph} from "grommet";
 import {Redirect, useParams} from "react-router";
 import ReactHtmlParser from "react-html-parser";
 
@@ -38,122 +38,251 @@ const KemenBiro = () => {
 	}
 	
 	return (
-		<>
+		<>	
 			<Helmet>
-				<title>{kemenbiro.title}</title>
+			<title>{kemenbiro.title}</title>
 			</Helmet>
+
 			<Box
 				direction="row-responsive"
-				height={{"min": "medium"}}
+				align="center"
 				alignContent="center"
 				justify="center"
-				background="brand"
+				background="acc-8"
+				pad={{horizontal:"medium"}}
+				>
+				<Box justify="center" align="center" pad="large">
+					<Heading textAlign="center" level="1" margin="small" color="acc-7">
+						{kemenbiro.title.toUpperCase()}
+					</Heading>
+					<Box background="acc-5" width="small" height="5px"></Box>
+				</Box>
+			</Box>
+
+			<Box
+				direction="row-responsive"
+				height={{ "medium": "medium" }}
+				width={{ "medium": "medium" }}
+				background="acc-8"
+				pad={{"vertical": "medium"}}
+				border={{
+					"color": "acc-5",
+					"size": "medium",
+					"style": "solid",
+					"side": "bottom"
+				}}
 			>
-				<Box basis="1/3" justify="center" align="center" className="relatify" pad="large">
+				<Box className="relatify" responsive="true" width="medium" alignContent="center" justify="center" align="center"></Box>
+				<Box className="relatify" responsive="true" width="large" alignContent="center" justify="center" align="center" pad={{"bottom":"large"}}>
 					<Image
-						style={{"maxHeight": "380px"}} fill fit="contain"
-						src={`/assets/kabinet/${kemenbiro.id}.png`}
-					/>
-					<Box
-						background={{
-							"color": "accent-1",
-							"opacity": "strong",
-							"dark": true
-						}}
-						className="menteri-name" pad={{"vertical": "small", "horizontal": "medium"}} round="small"
-						align="stretch"
-						alignContent="stretch"
-						justify="between"
-						direction="row"
-						gap="medium"
-					>
-						<Box>
-							<Text weight="bold" size="small">{ReactHtmlParser(kemenbiro.jabatan)}</Text>
+						className="ellipse"
+						style={{"maxHeight": "500px"}} 
+						src={`/assets/Ellipse.png`}
+						position="absolute"
+						/>
+					<Image
+						className="groupFoto"
+						style={{"maxHeight": "500px"}} fill fit="contain"
+						src={`/assets/kabinet/${kemenbiro.id}.png`}/>
+				</Box>
+				<Box direction="column" alignContent="center" pad={{"vertical": "large"}}>	
+					<Box width="large" responsive="true" alignContent="center" justify="center" align="center" className="relatify" pad={{"vertical":"large"}}>
+						<Box
+							background={{
+								"color": "acc-2",
+								"opacity": "strong",
+								"dark": true
+							}}
+							className="menteri-name" pad={{"vertical": "small", "horizontal": "small"}} round="small"
+							align="stretch"
+							alignContent="stretch"
+							justify="between"
+							direction="row"
+							gap="medium"
+						>	
+							<Box>
+								<Text textAlign="center" weight="bold" size="small" color="acc-6">{ReactHtmlParser(kemenbiro.jabatan)}</Text>
+							</Box>
+							<Box>
+								<Text textAlign="center" weight="bold" size="medium" color="acc-7">{ReactHtmlParser(kemenbiro.bph)}</Text>
+							</Box>
 						</Box>
-						<Box>
-							<Text size="small">{ReactHtmlParser(kemenbiro.bph)}</Text>
+					</Box>
+					<Box width="large" responsive="true" alignContent="center" justify="center" align="center" className="relatify" pad={{"vertical":"large"}}>
+						<Box
+							background={{
+								"color": "acc-2",
+								"opacity": "strong",
+								"dark": true
+							}}
+							className="menteri-name" pad={{"vertical": "small", "horizontal": "small"}} round="small"
+							align="stretch"
+							alignContent="stretch"
+							justify="between"
+							direction="row"
+							gap="medium"
+						>	
+							<Box>
+								<Text textAlign="center" weight="bold" size="small" color="acc-6">{ReactHtmlParser(kemenbiro.jabatan)}</Text>
+							</Box>
+							<Box>
+								<Text textAlign="center" weight="bold" size="medium" color="acc-7">{ReactHtmlParser(kemenbiro.bph)}</Text>
+							</Box>
 						</Box>
 					</Box>
 				</Box>
-				<Box basis="1/4" justify="center" align="center" pad="large">
-					<Heading textAlign="center" level="1" size="small" margin="small">
-						{kemenbiro.title.toUpperCase()}
-					</Heading>
-				</Box>
+				<Box className="relatify" responsive="true" width="medium" alignContent="center" justify="center" align="center"></Box>
 			</Box>
+
+			<Box background="acc-1" pad={{"vertical": "large"}}></Box>
 			
 			{isStaff &&
 			<>
-				<Box
-					direction="row-responsive"
-					align="center"
-					alignContent="center"
-					justify="center"
-					background="light-4"
-					pad="medium"
-				>
-					<Text textAlign="center" weight="bold" size="xlarge">&darr; Staff &darr;</Text>
-				</Box>
-				<Box
-					direction="row-responsive"
-					height={{"min": "medium"}}
-					alignContent="center"
-					justify="center"
-					wrap
-					pad="large"
-					gap="xsmall"
-					background="accent-2"
-					border={{
-						"color": "accent-3",
-						"size": "large",
-						"style": "solid",
-						"side": "bottom"
-					}}
-				>
 					{
 						kemenbiro.staff.map((item, index) => (
 							<Box key={index} width="small" justify="center" align="center" margin="medium">
 								<Image
 									style={{"maxHeight": "200px"}} fill fit="contain"
-									src={`/assets/kabinet/${kemenbiro.id}/${index + 1}.png`}
+									src={`/assets/kabinet/advokesma/${kemenbiro.id}/${index + 1}.png`}
 								/>
 								<Text weight="bold" textAlign="center" size="small">{item}</Text>
 							</Box>
 						))
 					}
-				</Box>
 			</>
-			}
-			
+			}				
 			<Box
 				direction="row-responsive"
-				height={{"min": "medium"}}
+				align="center"
 				alignContent="center"
-				justify="center"
+				justify="center"	
+				background="acc-8"
 			>
-				<Box basis="1/3" justify="center" align="center" background="light-4" pad="medium">
-					<Heading size="xlarge" level="2">TUPOKSI:</Heading>
-				</Box>
-				<Box basis="2/3" justify="center" align="center" pad="xlarge" background="dark-1">
-					<Text size="large">
-						{kemenbiro.tupoksi}
-					</Text>
+				<Box  justify="center" align="center" pad={{"top": "small"}}>
+					<Heading size="medium" level="2" color="acc-7" >Staff</Heading>
 				</Box>
 			</Box>
-			
-			{isProker &&
 			<Box
 				direction="row-responsive"
 				height={{"min": "medium"}}
 				alignContent="center"
 				justify="center"
-			>
-				<Box basis="1/3" justify="center" align="stretch" background="dark-1" pad="medium">
-					<Heading textAlign="center" size="xlarge" level="2">PROGRAM<br/>KERJA:</Heading>
+				wrap
+				pad={{ horizontal: "small", bottom:"small"}}
+				gap="xsmall"
+				background="acc-8"
+				border={{
+					"color": "acc-5",
+					"size": "medium",
+					"style": "solid",
+					"side": "bottom"
+					}}
+				>
+					<Box  width="small" justify="center" align="center" margin="medium">
+						<Image
+							style={{"maxHeight": "200px"}} fill fit="contain"
+							src={`/assets/kabinet/advokesma/1.png`}
+						/>
+						<Box
+							background={{
+								"color": "acc-2",
+								"opacity": "strong",
+								"dark": true
+							}}
+							round="small"
+							pad={{"vertical": "5px", "horizontal": "small"}}
+							position="absolute"
+						>
+							<Text weight="bold" textAlign="center" size="small" color="acc-7">Nama Staff</Text>
+						</Box>
+					</Box>
+					<Box  width="small" justify="center" align="center" margin="medium">
+						<Image
+							style={{"maxHeight": "200px"}} fill fit="contain"
+							src={`/assets/kabinet/advokesma/1.png`}
+						/>
+						<Box
+							background={{
+								"color": "acc-2",
+								"opacity": "strong",
+								"dark": true
+							}}
+							round="small"
+							pad={{"vertical": "5px", "horizontal": "small"}}
+							position="absolute"
+						>
+							<Text weight="bold" textAlign="center" size="small" color="acc-7">Nama Staff</Text>
+						</Box>
+					</Box>
 				</Box>
-				<Box basis="2/3" justify="center" align="center" pad="xlarge" background="light-4">
-					<Text size="small" style={{"textAlign": "justify"}}>
+
+			<Box
+				direction="column"
+				height={{"min": "min"}}
+				alignContent="center"
+				justify="center"
+				border={{
+					"color": "acc-5",
+					"size": "medium",
+					"style": "solid",
+					"side": "bottom"
+				}}
+			>
+				<Box  justify="center" align="center" background="acc-1" pad={{"top": "small"}}>
+					<Heading className="headingPop" size="medium" level="2" color="acc-7" weight="bold">Tupoksi:</Heading>
+				</Box>
+				<Box direction="column-responsive" background="acc-1" pad={{"top":"small"}}>
+					<Box className="relatify" background="acc-1" responsive="true" width="medium" alignContent="center" justify="center" align="center"></Box>
+						<Box responsive="true" background="acc-1" pad={{"bottom": "large"}}>
+							<Text className="tupoksiTeks" justify="center" textAlign="center" size="large" color="acc-7">{kemenbiro.tupoksi}</Text>
+						</Box>
+					<Box className="relatify" background="acc-1" responsive="true" width="medium" alignContent="center" justify="center" align="center"></Box>
+				</Box>
+			</Box>
+
+			{/* {isProker && */}
+			<Box>
+				<Box justify="center" align="center" background="acc-2" pad={{"top": "small"}}>
+					<Heading className="headingPop" size="medium" level="2" color="acc-7" >Program Kerja:</Heading>
+				</Box>
+			</Box>
+			<Box
+				direction="column"
+				background="acc-2"
+				pad={{"top": "small", "bottom": "medium"}}
+			>
+				<Box alignContent="center" justify="center" align="center" className="relatify">
+					<Box 
+						background={{"color": "acc-1"}}
+						round="small"
+						pad={{"vertical": "small", "horizontal": "large"}}
+						position="relative"
+						gap="medium"
+						justify="center"
+						margin="small"
+					>
+						<Text weight="bold" textAlign="center" size="large" color="acc-7">Proker A</Text>
+					</Box>
+					<Box 
+						background={{"color": "acc-1"}}
+						round="small"
+						pad={{"vertical": "small", "horizontal": "large"}}
+						position="relative"
+						gap="medium"
+						justify="center"
+						margin="small"
+					>
+						<Text weight="bold" textAlign="center" size="large" color="acc-7">Proker B</Text>
+					</Box>
+				</Box>
+			</Box>
+		</>
+	);
+};
+
+					{/* <Text>
 						<ul>
+						
 							{
 								kemenbiro.proker.map((item, index) => (
 									<li key={index}>
@@ -162,12 +291,6 @@ const KemenBiro = () => {
 								))
 							}
 						</ul>
-					</Text>
-				</Box>
-			</Box>
-			}
-		</>
-	);
-};
+					</Text> */}
 
 export default KemenBiro;

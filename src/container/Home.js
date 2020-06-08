@@ -14,16 +14,16 @@ const Home = () => {
 					"image": "url(/assets/landing.jpg)"
 				}}
 				height={{"max": "large"}}
-				border={{
-					"color": "accent-3",
-					"size": "medium",
-					"style": "solid",
-					"side": "bottom"
-				}}
+				// border={{
+				// 	"color": "accent-3",
+				// 	"size": "medium",
+				// 	"style": "solid",
+				// 	"side": "bottom"
+				// }}
 			>
 				<Box
 					background={{
-						"color": "brand",
+						"color": "acc-3",
 						"dark": true,
 						"opacity": "strong"
 					}}
@@ -43,11 +43,11 @@ const Home = () => {
 			</Box>
 			
 			<Box
-				id="sambutan" background="light-4" direction="row-responsive" align="center" justify="center"
+				id="sambutan" background="acc-8" direction="row-responsive" align="center" justify="center"
 				pad="large" gap="large"
 			>
 				<Heading alignSelf="center" level="2" size="medium">
-					<Text color="brand" size="large">Sambutan hangat</Text><br/>
+					<Text color="brand" size="large">Sambutan hangat</Text><br/><br/>
 					Presiden<br/>
 					dan<br/>
 					Wakil Presiden
@@ -77,9 +77,9 @@ const Home = () => {
 			<InstagramPost/>
 			
 			<Box
-				direction="row-responsive" background="light-4"
+				direction="row-responsive" background="acc-2"
 				align="center" alignContent="center" alignSelf="center"
-				justify="center" pad="large" gap="xlarge"
+				justify="center" pad={{horizontal:"large", bottom:"large"}} gap="xlarge"
 			>
 				<Heading alignSelf="center" level="2" size="medium">Partnership:</Heading>
 				<Box align="center" alignContent="center" alignSelf="center" width="small" height="small">

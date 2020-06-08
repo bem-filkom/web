@@ -5,7 +5,7 @@ export const kemenbiroList = [
 		"title": "Presiden-Wakil Presiden",
 		"jabatan": "Presiden<br/>Wakil Presiden",
 		"bph": "M Verrel Radiman<br/>M Jordan Farrell",
-		"tupoksi": "Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk" +
+		"tupoksi": "Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk " +
 			"disampaikan pada pihak-pihak terkait demi terwujudnya perjuangan aspirasi kesejahteraan mahasiswa.",
 	},
 	{
@@ -13,7 +13,7 @@ export const kemenbiroList = [
 		"title": "Sekretaris Pimpinan",
 		"jabatan": "Sekretaris Pimpinan",
 		"bph": "Jeowandha Ria Wiyani",
-		"tupoksi": "Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk" +
+		"tupoksi": "Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk " +
 			"disampaikan pada pihak-pihak terkait demi terwujudnya perjuangan aspirasi kesejahteraan mahasiswa."
 	},
 	{
@@ -21,7 +21,7 @@ export const kemenbiroList = [
 		"title": "Supervisor",
 		"jabatan": "Supervisor<br/>Supervisor",
 		"bph": "Ahmad Farhan<br/>Fawwaz Roja M",
-		"tupoksi": "Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk" +
+		"tupoksi": "Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk " +
 			"disampaikan pada pihak-pihak terkait demi terwujudnya perjuangan aspirasi kesejahteraan mahasiswa."
 	},
 	{
@@ -29,7 +29,7 @@ export const kemenbiroList = [
 		"title": "Pengembangan Sumber Daya Internal",
 		"jabatan": "Supervisor<br/>Supervisor",
 		"bph": "Ahmad Farhan<br/>Fawwaz Roja M",
-		"tupoksi": "Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk" +
+		"tupoksi": "Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk " +
 			"disampaikan pada pihak-pihak terkait demi terwujudnya perjuangan aspirasi kesejahteraan mahasiswa."
 	},
 ];

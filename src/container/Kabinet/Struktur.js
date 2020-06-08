@@ -14,26 +14,27 @@ const StrukturKabinet = () => {
 				align="center"
 				alignContent="center"
 				justify="center"
-				background="brand"
+				background="acc-3"
+				pad="medium"
 				border={{
-					"color": "dark-1",
+					"color": "acc-5",
 					"size": "medium",
 					"style": "solid",
 					"side": "bottom"
 				}}
 			>
-				<Heading textAlign="center" level="1" margin="small">STRUKTUR KABINET</Heading>
+				<Heading textAlign="center" level="1" margin="small" color="acc-8">STRUKTUR KABINET</Heading>
 			</Box>
 			<Box
 				direction="row-responsive"
-				background="light-3"
+				background="acc-2"
 				height={{"min": "medium"}}
 				alignContent="center"
 				justify="center"
 				pad="xlarge"
 			>
 				<Image
-					style={{"maxWidth": "800px", "border-radius": "2em"}} fill fit="contain"
+					style={{"maxWidth": "1000px", "border-radius": "2em"}} fill fit="contain"
 					src="/assets/kabinet/struktur.jpg"
 				/>
 			</Box>
