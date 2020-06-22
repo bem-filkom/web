@@ -24,7 +24,11 @@ html, body {
 .navbar-title {
     font-weight: 600;
     font-size: 1.5em!important;
-    text-shadow: -0.5px -0.5px 1px black, 0.5px -0.5px 1px black, -0.5px 0.5px 1px black, 0.5px 0.5px 1px black;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.landing-title {
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .ig-post {

@@ -17,6 +17,7 @@ import StrukturKabinet from "./container/Kabinet/Struktur";
 import KemenBiro from "./container/Kabinet/KemenBiro";
 import Footer from "./components/Footer/Footer";
 import Error404 from "./container/Error404";
+import ScrollToTop from "./components/ScrollToTop";
 
 // import ComingSoon from "./container/ComingSoon";
 
@@ -28,7 +29,8 @@ const App = () => {
 	return (
 		<>
 			<Helmet titleTemplate="%s | BEM FILKOM UB 2020" defaultTitle="BEM FILKOM UB 2020 | Elaborasi Makna"/>
-			<Grommet theme={bemTheme} full>
+			<Grommet theme={bemTheme} full id="grommetParent">
+				<ScrollToTop/>
 				<Navbar/>
 				<Switch>
 					<Route exact path="/" component={Home}/>

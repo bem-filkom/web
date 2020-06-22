@@ -30,7 +30,9 @@ function Navbar() {
 					/>
 				</Link>
 				<Link to="/" style={{"textDecorationLine":"none"}}>
-					<Heading className="navbar-title" style={{"lineHeight":"25px"}} alignSelf="center" color="white">BEM FILKOM UB</Heading>
+					<Heading className="navbar-title" style={{"lineHeight":"25px"}} alignSelf="center" color="white">
+						BEM FILKOM
+					</Heading>
 				</Link>
 			</Box>
 			

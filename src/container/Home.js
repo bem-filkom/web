@@ -23,7 +23,7 @@ const Home = () => {
 			>
 				<Box
 					background={{
-						"color": "acc-3",
+						"color": "acc-9",
 						"dark": true,
 						"opacity": "strong"
 					}}
@@ -33,8 +33,9 @@ const Home = () => {
 						"vertical": "xlarge",
 						"horizontal": "none"
 					}}
+					className="landing-title"
 				>
-					<Heading size="large" textAlign="center" margin="medium" level="1">BEM FILKOM UB 2020</Heading>
+					<Heading size="large" textAlign="center" margin="medium" level="1">BEM FILKOM 2020</Heading>
 					<Heading textAlign="center" level="2" size="small" margin={{"top": "small", "bottom": "large"}}>
 						- Kabinet Elaborasi Makna -
 					</Heading>
@@ -77,9 +78,9 @@ const Home = () => {
 			<InstagramPost/>
 			
 			<Box
-				direction="row-responsive" background="acc-2"
+				direction="row-responsive" background="acc-1"
 				align="center" alignContent="center" alignSelf="center"
-				justify="center" pad={{horizontal:"large", bottom:"large"}} gap="xlarge"
+				justify="center" pad="large" gap="xlarge"
 			>
 				<Heading alignSelf="center" level="2" size="medium">Partnership:</Heading>
 				<Box align="center" alignContent="center" alignSelf="center" width="small" height="small">
