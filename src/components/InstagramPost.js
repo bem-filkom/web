@@ -29,8 +29,13 @@ const InstagramPost = () => {
 			align="center"
 			justify="center"
 			pad={{"vertical": "large", "horizontal": "large"}}
+			border={{
+				color: "acc-5",
+				size: "large",
+				side: "bottom"
+			}}
 		>
-			<Heading align="center" level="2" size="medium">
+			<Heading align="center" level="2" size="large">
 				Berita Terbaru
 			</Heading>
 			<Text textAlign="center" margin={{"bottom": "medium"}} color="dark-2" size="medium" alignSelf="center">
@@ -54,14 +59,15 @@ const InstagramPost = () => {
 			<Box
 				direction="row-responsive"
 				margin={{"top": "medium"}}
-				justify="evenly"
+				justify="center"
+				align="center"
 				wrap
 				width={{"max": "large"}}
 			>
 				{isLoading ? (
-					<Box animation="jiggle" alignSelf="center">
-						<Text color="dark-1" size="xlarge" alignSelf="center">
-							<Update color="dark-1"/> fetching...
+					<Box animation="pulse" alignSelf="center">
+						<Text color="dark-1" size="large" alignSelf="center">
+							<Update size="small" color="dark-1"/> fetching
 						</Text>
 					</Box>
 				) : (
@@ -82,7 +88,7 @@ const InstagramPost = () => {
 								height="small"
 							/>
 							<Box
-								background="accent-2"
+								background="acc-9"
 								width="small"
 								pad="medium"
 							>
@@ -95,6 +101,7 @@ const InstagramPost = () => {
 			</Box>
 			<Anchor
 				margin="large"
+				alignSelf="center"
 				color="neutral-4"
 				href="https://www.instagram.com/bemfilkomub/"
 				label="Ikuti kami agar tidak ketinggalan info! &#187;"

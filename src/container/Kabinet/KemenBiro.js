@@ -1,6 +1,6 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import {Box, Heading, Image, Text, Paragraph} from "grommet";
+import {Box, Heading, Image, Text} from "grommet";
 import {Redirect, useParams} from "react-router";
 import ReactHtmlParser from "react-html-parser";
 
@@ -42,76 +42,66 @@ const KemenBiro = () => {
 			</Helmet>
 			
 			<Box
-				direction="row-responsive"
+				animation="fadeIn"
 				align="center"
-				alignContent="center"
 				justify="center"
 				background="acc-8"
-				pad={{horizontal: "medium"}}
 			>
 				<Box justify="center" align="center" pad="large">
-					<Text textAlign="center" size="xxlarge" margin="small" color="acc-7">
-						{kemenbiro.title}
+					<Text margin="none">
+						{kemenbiro.tipe}
 					</Text>
-					<Box background="acc-5" width="small" height="5px"></Box>
+					<Heading textAlign="center" size="xxlarge" margin={{top: "none", bottom: "medium"}} color="acc-7" className="headingPop">
+						{kemenbiro.title}
+					</Heading>
+					<Box background="acc-5" width="100%" height="5px"/>
 				</Box>
 			</Box>
 			
 			<Box
+				animation="fadeIn"
 				direction="row-responsive"
-				height={{medium: "medium"}}
-				width={{medium: "medium"}}
 				background="acc-8"
-				pad={{vertical: "medium"}}
-				border={{
-					color: "acc-5",
-					size: "medium",
-					style: "solid",
-					side: "bottom",
-				}}
+				justify="center"
+				align="center"
+				pad={{top: "none", bottom: "large"}}
 			>
 				<Box
-					className="relatify"
-					responsive="true"
-					width="medium"
-					alignContent="center"
+					className="relatify menteriInfo"
+					width={{min: "medium"}}
 					justify="center"
 					align="center"
-				></Box>
-				<Box
-					className="relatify"
-					responsive="true"
-					width="large"
-					alignContent="center"
-					justify="center"
-					align="center"
-					pad={{bottom: "large"}}
-					margin="small"
+					margin={{top: "small", bottom: "large"}}
 				>
-					<Image
-						className="ellipse"
-						style={{maxHeight: "500px"}}
-						src={"/assets/Ellipse.png"}
-						position="absolute"
-					/>
+					<Box className="ellipse" animation="pulse">
+						<Image
+							style={{
+								width: "300px",
+								maxWidth: "80vw",
+								filter: "saturate(70%) brightness(110%)"
+							}}
+							src={"/assets/Ellipse.png"}
+						/>
+					</Box>
 					<Image
 						className="groupFoto"
-						style={{maxHeight: "500px"}}
-						fill
+						style={{width: "400px", maxWidth: "80vw"}}
 						fit="contain"
 						src={`/assets/kabinet/${kemenbiro.id}.png`}
 					/>
 				</Box>
-				{/* Error */}
 				<Box
+					alignSelf="center"
 					direction="column"
 					gap="none"
+					width="medium"
 					align="center"
 					justify="center"
 				>
 					{kemenbiro.jabatan.map((item, index) => {
 						return (
 							<Box
+								key={index}
 								margin="none"
 								pad="none"
 								align="center"
@@ -127,25 +117,21 @@ const KemenBiro = () => {
 								>
 									<Box
 										background={{
-											color: "acc-2",
-											opacity: "strong",
-											dark: true,
+											color: "acc-2"
 										}}
 										className="menteri-name"
-										pad={{vertical: "small", horizontal: "small"}}
+										pad={{vertical: "xsmall", horizontal: "small"}}
 										round="small"
-										align="stretch"
 										alignContent="stretch"
-										justify="between"
 										direction="row"
-										gap="medium"
+										gap="small"
+										align="center"
+										justify="center"
 									>
 										<Box>
 											<Text
 												textAlign="center"
-												weight="bold"
 												size="small"
-												color="acc-6"
 											>
 												{ReactHtmlParser(item)}
 											</Text>
@@ -155,7 +141,7 @@ const KemenBiro = () => {
 												textAlign="center"
 												weight="bold"
 												size="medium"
-												color="acc-7"
+												color="black"
 											>
 												{ReactHtmlParser(kemenbiro.bph[index])}
 											</Text>
@@ -166,16 +152,6 @@ const KemenBiro = () => {
 						);
 					})}
 				</Box>
-				{/* Error */}
-				
-				<Box
-					className="relatify"
-					responsive="true"
-					width="medium"
-					alignContent="center"
-					justify="center"
-					align="center"
-				></Box>
 			</Box>
 			
 			{isStaff && (
@@ -185,10 +161,19 @@ const KemenBiro = () => {
 						align="center"
 						alignContent="center"
 						justify="center"
-						background="acc-1"
+						margin={{bottom: "none"}}
+						pad={{top: "large", bottom: "none"}}
+						background="acc-8"
+						
+						border={{
+							color: "acc-5",
+							size: "large",
+							style: "solid",
+							side: "top",
+						}}
 					>
 						<Box justify="center" align="center" pad={{top: "small"}}>
-							<Heading size="medium" level="2" color="acc-7">
+							<Heading size="medium" level="2" color="acc-7" className="headingPop">
 								Staff
 							</Heading>
 						</Box>
@@ -196,52 +181,44 @@ const KemenBiro = () => {
 					
 					<Box
 						direction="row-responsive"
-						height={{min: "medium"}}
 						alignContent="center"
 						justify="center"
 						wrap
-						pad={{horizontal: "small", bottom: "small"}}
+						margin={{top: "none", bottom: "medium"}}
+						pad={{top: "none", horizontal: "small", bottom: "large"}}
 						gap="xsmall"
 						background="acc-8"
-						border={{
-							color: "acc-5",
-							size: "medium",
-							style: "solid",
-							side: "bottom",
-						}}
 					>
 						{isStaff && (
 							<>
 								{kemenbiro.staff.map((item, index) => (
 									<Box
+										key={index}
 										width="small"
-										justify="center"
+										justify="start"
 										align="center"
-										margin="medium"
+										margin="small"
 									>
-										<Image
-											style={{maxHeight: "200px"}}
-											fill
-											fit="contain"
-											src={"/assets/kabinet/advokesma/1.png"}
-										/>
+										{/*<Image*/}
+										{/*	style={{maxHeight: "200px"}}*/}
+										{/*	fill*/}
+										{/*	fit="contain"*/}
+										{/*	src={"/assets/kabinet/advokesma/1.png"}*/}
+										{/*/>*/}
 										<Box
 											background={{
-												color: "acc-2",
-												opacity: "strong",
-												dark: true,
+												color: "acc-1"
 											}}
 											round="small"
-											pad={{vertical: "5px", horizontal: "small"}}
-											position="absolute"
-											height="50px"
-											width="150px"
+											pad={{vertical: "small", horizontal: "medium"}}
+											height={{"min": "96px"}}
+											fill="horizontal"
+											align="center"
+											justify="center"
 										>
 											<Text
-												weight="bold"
 												textAlign="center"
-												size="small"
-												color="acc-7"
+												weight="bold"
 											>
 												{kemenbiro.staff[index]}
 											</Text>
@@ -259,17 +236,20 @@ const KemenBiro = () => {
 				height={{min: "min"}}
 				alignContent="center"
 				justify="center"
+				align="center"
+				pad="large"
 				border={{
 					color: "acc-5",
-					size: "medium",
+					size: "large",
 					style: "solid",
-					side: "bottom",
+					side: "top",
 				}}
+				background="acc-2"
 			>
 				<Box
 					justify="center"
 					align="center"
-					background="acc-1"
+					background="acc-2"
 					pad={{top: "small"}}
 				>
 					<Heading
@@ -279,18 +259,19 @@ const KemenBiro = () => {
 						color="acc-7"
 						weight="bold"
 					>
-						Tupoksi:
+						Tupoksi
 					</Heading>
 				</Box>
 				<Box
-					direction="column-responsive"
-					background="acc-1"
+					alignSelf="center"
+					align="center"
+					justify="center"
+					background="acc-2"
 					pad={{top: "small"}}
 				>
 					<Box
 						className="relatify"
-						background="acc-1"
-						responsive="true"
+						background="acc-2"
 						width="medium"
 						alignContent="center"
 						justify="center"
@@ -298,21 +279,17 @@ const KemenBiro = () => {
 					>
 					
 					</Box>
-					<Box responsive="true" background="acc-1" pad={{bottom: "large"}}>
+					<Box background="acc-2" pad={{bottom: "large"}} width={{max: "80%"}}>
 						<Text
 							className="tupoksiTeks"
-							justify="center"
-							textAlign="center"
-							size="large"
-							color="acc-7"
+							style={{"textAlign": "justify"}}
 						>
 							{kemenbiro.tupoksi}
 						</Text>
 					</Box>
 					<Box
 						className="relatify"
-						background="acc-1"
-						responsive="true"
+						background="acc-2"
 						width="medium"
 						alignContent="center"
 						justify="center"
@@ -323,75 +300,61 @@ const KemenBiro = () => {
 				</Box>
 			</Box>
 			
-			{/* {isProker && */}
-			<Box>
-				<Box
-					justify="center"
-					align="center"
-					background="acc-2"
-					pad={{top: "small"}}
-				>
-					<Heading className="headingPop" size="medium" level="2" color="acc-7">
-						Program Kerja:
-					</Heading>
-				</Box>
-			</Box>
-			<Box
-				direction="column"
-				background="acc-2"
-				pad={{top: "small", bottom: "medium"}}
-			>
-				<Box
-					alignContent="center"
-					justify="center"
-					align="center"
-					className="relatify"
-				>
-					<Box
-						background={{color: "acc-1"}}
-						round="small"
-						pad={{vertical: "small", horizontal: "large"}}
-						position="relative"
-						gap="medium"
-						justify="center"
-						margin="small"
-					>
-						<Text weight="bold" textAlign="center" size="large" color="acc-7">
-							Proker A
-						</Text>
+			{isProker && (
+				<>
+					<Box>
+						<Box
+							justify="center"
+							align="center"
+							background="acc-1"
+							pad={{top: "large"}}
+							border={{
+								color: "acc-5",
+								size: "large",
+								style: "solid",
+								side: "top",
+							}}
+						>
+							<Heading className="headingPop" size="medium" level="2" color="acc-7">
+								Program Kerja
+							</Heading>
+						</Box>
 					</Box>
 					<Box
-						background={{color: "acc-1"}}
-						round="small"
-						pad={{vertical: "small", horizontal: "large"}}
-						position="relative"
-						gap="medium"
+						background="acc-1"
+						pad={{top: "small", bottom: "xlarge"}}
 						justify="center"
-						margin="small"
+						align="center"
 					>
-						<Text weight="bold" textAlign="center" size="large" color="acc-7">
-							Proker B
-						</Text>
+						<Box
+							direction="row-responsive"
+							wrap
+							alignContent="center"
+							justify="center"
+							align="center"
+							width={{max: "80%"}}
+						>
+							{kemenbiro.proker.map((item, index) =>
+								<Box
+									key={index}
+									background={{color: "acc-2"}}
+									round="small"
+									pad={{vertical: "small", horizontal: "large"}}
+									position="relative"
+									gap="medium"
+									justify="center"
+									margin="small"
+								>
+									<Text weight="bold" textAlign="center" size="small">
+										{item}
+									</Text>
+								</Box>
+							)}
+						</Box>
 					</Box>
-				</Box>
-			</Box>
+				</>
+			)}
 		</>
 	);
 };
-
-{
-	/* <Text>
-						<ul>
-						
-							{
-								kemenbiro.proker.map((item, index) => (
-									<li key={index}>
-										<Text weight="bold">{item}</Text>
-									</li>
-								))
-							}
-						</ul>
-					</Text> */
-}
-
 export default KemenBiro;

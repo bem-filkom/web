@@ -4,6 +4,7 @@ export const elmaTheme = {
 		// font body text
 		"font": {
 			"family": "'Nunito Sans', Helvetica, Arial, sans-serif",
+			// "family": "'Poppins', Helvetica, Arial, sans-serif",
 		},
 		"colors": {
 			"icon": {
@@ -39,14 +40,15 @@ export const elmaTheme = {
 			
 			// WARNA TEMA V2	
 			"acc-1":"#FFE3EE",//pink lebih muda
-			"acc-2":"#C7E7FC",//biru lebih muda
+			"acc-2":"#bfe0f1",//biru lebih muda
 			"acc-3":"#FFAFCF",//pink muda
 			"acc-4":"#77b1de",//biru muda
 			"acc-5":"#EFD5B8",//coklat krem
 			"acc-6":"#414A50",//Grey blue
 			"acc-7":"#000000",//hitam
 			"acc-8":"#FFFFFF",//putih
-			"acc-9":"#a04469",//putih
+			"acc-9":"#ae4f76",//putih
+			"acc-10":"#285c85",//putih
 
 			// WARNA TEMA BEM
 			"accent-1": "#C9B79C",
@@ -83,7 +85,7 @@ export const elmaTheme = {
 	},
 	"heading": {
 		"font": {
-			"family": "Solway, Helvetica, Arial, sans-serif"
+			"family": "Poppins, Helvetica, Arial, sans-serif"
 		}
 	},
 	"headingPop": {

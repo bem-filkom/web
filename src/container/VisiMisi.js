@@ -12,49 +12,55 @@ const VisiMisi = () => {
 				direction="row-responsive"
 				height={{min: "small"}}
 				alignContent="center"
+				align="center"
 				justify="center"
+				pad="large"
 				border={{
 					color: "acc-5",
-					size: "medium",
+					size: "large",
 					style: "solid",
 					side: "bottom",
 				}}
 			>
-				<Box basis="1/2" justify="center" align="center" pad="medium">
+				<Box width="medium" justify="center" align="center" alignSelf="center">
 					<Image
-						style={{maxWidth: "250px"}}
-						fill
+						style={{maxHeight: "250px"}}
 						fit="contain"
 						src="/assets/logotext.png"
 					/>
 				</Box>
-				<Box basis="1/2" justify="center" pad={{"horizontal": "large"}}>
+				<Box width={{max: "large"}} justify="center">
 					<Heading size="medium" level="2" textAlign="center">
-						VISI-MISI BEM FILKOM UB <br/> Elaborasi Makna
+						Visi-Misi BEM FILKOM UB <br/> Elaborasi Makna
 					</Heading>
 				</Box>
-				<Box className="relatify" responsive="true" width="small" alignContent="center" justify="center"
-				     align="center"></Box>
 			</Box>
 			
 			<Box
 				direction="row-responsive"
 				height={{min: "300px"}}
-				alignContent="center"
+				align="center"
 				justify="center"
 				background="acc-2"
+				pad="xlarge"
+				border={{
+					color: "acc-5",
+					size: "large",
+					style: "solid",
+					side: "bottom",
+				}}
 			>
-				<Box basis="1/2" justify="center" align="center" pad={{vertical: "large", horizontal: "medium"}}>
-					<Box background="acc-1" round="small">
+				<Box width="medium" justify="center" align="center" alignSelf="center">
+					<Box background="acc-1" round="small" margin="large">
 						<Heading size="xlarge" level="2" margin="25px">
-							VISI :
+							VISI
 						</Heading>
 					</Box>
 				</Box>
 				<Box
-					basis="1/2"
+					alignSelf="center"
 					justify="center"
-					pad="large"
+					width={{max: "500px"}}
 				>
 					<Text size="large">
 						BEM FILKOM sebagai wadah dalam membangun nilai instrumental
@@ -62,32 +68,26 @@ const VisiMisi = () => {
 						FILKOM dan Indonesia.
 					</Text>
 				</Box>
-				<Box className="relatify" responsive="true" width="small" alignContent="center" justify="center"
-				     align="center"></Box>
 			</Box>
+			
 			<Box
 				direction="row-responsive"
-				height={{min: "300px"}}
 				alignContent="center"
+				align="start"
 				justify="center"
-				border={{
-					color: "light-3",
-					size: "medium",
-					style: "solid",
-					side: "bottom",
-				}}
+				pad="xlarge"
 			>
-				<Box basis="1/2" justify="center" align="center" pad={{vertical: "large", horizontal: "medium"}}>
-					<Box background="acc-1" round="small">
+				<Box width="medium" justify="start" align="center" alignSelf="center">
+					<Box background="acc-1" round="small" margin="medium">
 						<Heading size="xlarge" level="2" margin="25px">
-							MISI :
+							MISI
 						</Heading>
 					</Box>
 				</Box>
 				<Box
-					basis="1/2"
-					justify="center"
-					pad="large"
+					width={{max: "500px"}}
+					align="start"
+					alignSelf="center"
 				>
 					<Text size="medium">
 						<ol>
@@ -117,39 +117,34 @@ const VisiMisi = () => {
 						</ol>
 					</Text>
 				</Box>
-				<Box className="relatify" responsive="true" width="small" alignContent="center" justify="center"
-				     align="center"></Box>
 			</Box>
 			
 			<Box
-				direction="row-responsive"
-				height={{min: "medium"}}
-				height="small"
-				pad={{top: "medium"}}
-				alignContent="center"
+				background="acc-1"
+				align="center"
 				justify="center"
+				pad={{top: "large"}}
 				border={{
 					color: "acc-5",
-					size: "medium",
+					size: "large",
 					style: "solid",
 					side: "top",
 				}}
 			>
 				<Box justify="center" align="center">
 					<Heading textAlign="center" size="xlarge" level="2">
-						ARAH
-						<br/>
-						GERAK:
+						ARAH GERAK
 					</Heading>
 				</Box>
 			</Box>
 			<Box
-				height={{min: "medium"}}
-				alignContent="center"
+				background="acc-1"
+				align="center"
 				justify="center"
+				pad={{bottom: "large"}}
 				border={{
 					color: "acc-5",
-					size: "medium",
+					size: "large",
 					style: "solid",
 					side: "bottom",
 				}}
@@ -158,10 +153,10 @@ const VisiMisi = () => {
 					direction="row-responsive"
 					width={{max: "768px"}}
 					alignSelf="center"
-					gap="xlarge"
+					gap="medium"
 				>
-					<Box width="140px" justify="center" align="center">
-						<Box className="boxAG" round="small" pad="small">
+					<Box width={{max: "90px"}} justify="start" align="center" margin="medium">
+						<Box className="boxAG" round="small" pad="small" background="acc-8">
 							<Image
 								style={{maxWidth: "140px", maxHeight: "140px"}}
 								fill
@@ -169,12 +164,12 @@ const VisiMisi = () => {
 								src="/assets/arahGerak/ag1.png"
 							/>
 						</Box>
-						<Text size="medium" textAlign="center">
+						<Text size="small" textAlign="center" weight="bold">
 							<p>INKLUSIF PROFESIONAL</p>
 						</Text>
 					</Box>
-					<Box width="140px" justify="center" align="center">
-						<Box className="boxAG" round="small" pad="small">
+					<Box width={{max: "90px"}} justify="start" align="center" margin="medium">
+						<Box className="boxAG" round="small" pad="small" background="acc-8">
 							<Image
 								style={{maxWidth: "140px", maxHeight: "140px"}}
 								fill
@@ -182,12 +177,12 @@ const VisiMisi = () => {
 								src="/assets/arahGerak/ag2.png"
 							/>
 						</Box>
-						<Text size="medium" textAlign="center">
+						<Text size="small" textAlign="center" weight="bold">
 							<p>BEKERJASAMA DINAMIS</p>
 						</Text>
 					</Box>
-					<Box width="140px" justify="center" align="center">
-						<Box className="boxAG" round="small" pad="small">
+					<Box width={{max: "90px"}} justify="start" align="center" margin="medium">
+						<Box className="boxAG" round="small" pad="small" background="acc-8">
 							<Image
 								style={{maxWidth: "140px", maxHeight: "140px"}}
 								fill
@@ -195,12 +190,12 @@ const VisiMisi = () => {
 								src="/assets/arahGerak/ag3.png"
 							/>
 						</Box>
-						<Text size="medium" textAlign="center">
+						<Text size="small" textAlign="center" weight="bold">
 							<p>INISIATOR PERGERAKAN</p>
 						</Text>
 					</Box>
-					<Box width="140px" justify="center" align="center">
-						<Box className="boxAG" round="small" pad="small">
+					<Box width={{max: "90px"}} justify="start" align="center" margin="medium">
+						<Box className="boxAG" round="small" pad="small" background="acc-8">
 							<Image
 								style={{maxWidth: "140px", maxHeight: "140px"}}
 								fill
@@ -208,12 +203,12 @@ const VisiMisi = () => {
 								src="/assets/arahGerak/ag4.png"
 							/>
 						</Box>
-						<Text size="medium" textAlign="center">
+						<Text size="small" textAlign="center" weight="bold">
 							<p>PENGEMBANGAN SUPORTIF</p>
 						</Text>
 					</Box>
-					<Box width="140px" justify="center" align="center">
-						<Box className="boxAG" round="small" pad="small">
+					<Box width={{max: "90px"}} justify="start" align="center" margin="medium">
+						<Box className="boxAG" round="small" pad="small" background="acc-8">
 							<Image
 								style={{
 									maxWidth: "140px",
@@ -225,28 +220,22 @@ const VisiMisi = () => {
 								src="/assets/arahGerak/ag5.png"
 							/>
 						</Box>
-						<Text size="medium" textAlign="center">
+						<Text size="small" textAlign="center" weight="bold">
 							<p>PELAYANAN AKTIF PROGRESIF</p>
 						</Text>
 					</Box>
 				</Box>
 			</Box>
+			
 			<Box
-				direction="row-responsive"
-				height={{min: "medium"}}
+				fill="horizontal"
 				justify="center"
 				align="center"
+				pad="xlarge"
+				gap="medium"
 			>
-				<Box
-					fill="horizontal"
-					justify="center"
-					align="center"
-					pad="large"
-					height={{min: "medium"}}
-				>
-					<Text size="large">/ ELABORASI MAKNA /</Text>
-					<Heading textAlign="center">BANGUN NILAI, CIPTA KREASI!</Heading>
-				</Box>
+				<Text size="medium" textAlign="center"><i>ELABORASI MAKNA</i></Text>
+				<Text size="xxlarge" weight="bold" textAlign="center">BANGUN NILAI, CIPTA KREASI!</Text>
 			</Box>
 		</Box>
 	);

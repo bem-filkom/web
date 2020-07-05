@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Header, Box, Image, Heading} from "grommet";
 import NavbarButton from "./NavbarButton";
 import NavbarDropButton from "./NavbarDropButton";
@@ -6,13 +6,16 @@ import NavbarDropButton from "./NavbarDropButton";
 import {Link} from "react-router-dom";
 
 function Navbar() {
+	const [isOpened, setIsOpened] = useState(false);
+	
 	return (
 		<Header
+			animation="fadeIn"
 			id="navbar"
 			direction="row-responsive"
 			fill="horizontal"
 			pad={{horizontal: "xlarge"}}
-			background="acc-4"
+			background="acc-10"
 			align="center"
 			alignContent="center"
 			justify="center"
@@ -24,29 +27,33 @@ function Navbar() {
 			>
 				<Link to="/">
 					<Image
+						className="navbar-image"
 						fit="contain"
 						src="/assets/logo.png"
 						margin={{"right": "small"}}
 					/>
 				</Link>
 				<Link to="/" style={{"textDecorationLine":"none"}}>
-					<Heading className="navbar-title" style={{"lineHeight":"25px"}} alignSelf="center" color="white">
+					<Heading className="headingPop navbar-title" style={{"lineHeight":"25px"}} alignSelf="center" color="white">
 						BEM FILKOM
 					</Heading>
 				</Link>
+				<NavbarButton
+					margin="medium" className="navbar-home-mobile" text={isOpened ? "MENU▲" : "MENU▼"}
+					onClick={() => setIsOpened(!isOpened)}
+				/>
 			</Box>
 			
 			<Box
 				direction="row-responsive" gap="small" align="center" alignContent="center" alignSelf="center"
-				className="navbar-menu" pad="none" margin="none"
+				pad="none" margin={{left: "small"}} justify="center"
+				className={isOpened ? "navbar-menu opened" : "navbar-menu"}
 			>
-				<NavbarButton className="navbar-home-mobile" style={{"display":"none"}} path="/" text="Home"/>
-				
 				<NavbarButton path="/visimisi/" text="Visi & Misi"/>
-				
 				<NavbarDropButton text="Kabinet">
 					<NavbarButton path="/kabinet/" text="Struktur"/>
-					<NavbarButton path="/kabinet/preswapres" text="Presiden & Wapres"/>
+					<NavbarButton path="/kabinet/presiden" text="Presiden"/>
+					<NavbarButton path="/kabinet/wakilpresiden" text="Wakil Presiden"/>
 					<NavbarButton path="/kabinet/sekpim" text="Sekretaris Pimpinan"/>
 					<NavbarButton path="/kabinet/supervisor" text="Supervisor"/>
 					<NavbarButton path="/kabinet/psdi" text="PSDI"/>
@@ -64,11 +71,10 @@ function Navbar() {
 			</Box>
 			<Box
 				direction="row-responsive" gap="small" align="center" alignContent="center" alignSelf="center"
-				className="navbar-menu" pad="none" margin="none"
+				className={isOpened ? "navbar-menu opened" : "navbar-menu"} pad="none" margin="none"
 			>
-				<NavbarButton highlight extern path="/filkompedia/" text="FILKOMPEDIA"/>
-				
-				<NavbarDropButton highlight text="APPS">
+				<NavbarButton highlight extern path="/filkompedia/" disabled text="Coming Soon"/>
+				<NavbarDropButton highlight disabled text="Coming Soon">
 					<NavbarButton extern path="/apps/siperat/" text="SIPERAT"/>
 					<NavbarButton extern path="/apps/bismit/" text="Bismit Apps"/>
 					<NavbarButton extern path="/apps/injam/" text="Integrasi Peminjaman"/>

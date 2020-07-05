@@ -14,20 +14,20 @@ const StrukturKabinet = () => {
 				align="center"
 				alignContent="center"
 				justify="center"
-				background="acc-3"
-				pad="medium"
+				background="acc-9"
+				pad="large"
 				border={{
 					"color": "acc-5",
-					"size": "medium",
+					"size": "large",
 					"style": "solid",
 					"side": "bottom"
 				}}
 			>
-				<Heading textAlign="center" level="1" margin="small" color="acc-8">STRUKTUR KABINET</Heading>
+				<Heading textAlign="center" level="1" margin="small">STRUKTUR KABINET</Heading>
 			</Box>
 			<Box
 				direction="row-responsive"
-				background="acc-2"
+				background="acc-8"
 				height={{"min": "medium"}}
 				alignContent="center"
 				justify="center"

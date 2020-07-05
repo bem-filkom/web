@@ -1,10 +1,21 @@
 //tebak fungsinya apa
 export const kemenbiroList = [
 	{
-		id: "preswapres",
-		title: "Presiden-Wakil Presiden",
-		jabatan: ["Presiden<br/>Wakil Presiden"],
-		bph: ["M Verrel Radiman<br/>M Jordan Farrell"],
+		id: "presiden",
+		title: "Presiden",
+		tipe: "Pengurus Inti",
+		jabatan: ["Presiden BEM"],
+		bph: ["M. Verrel Radiman"],
+		tupoksi:
+			"Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk " +
+			"disampaikan pada pihak-pihak terkait demi terwujudnya perjuangan aspirasi kesejahteraan mahasiswa.",
+	},
+	{
+		id: "wakilpresiden",
+		title: "Wakil Presiden",
+		tipe: "Pengurus Inti",
+		jabatan: ["Wakil Presiden BEM"],
+		bph: ["M. Jordan Farrell"],
 		tupoksi:
 			"Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk " +
 			"disampaikan pada pihak-pihak terkait demi terwujudnya perjuangan aspirasi kesejahteraan mahasiswa.",
@@ -12,6 +23,7 @@ export const kemenbiroList = [
 	{
 		id: "sekpim",
 		title: "Sekretaris Pimpinan",
+		tipe: "Pengurus Inti",
 		jabatan: ["Sekretaris Pimpinan"],
 		bph: ["Jeowandha Ria Wiyani"],
 		tupoksi:
@@ -21,8 +33,9 @@ export const kemenbiroList = [
 	{
 		id: "supervisor",
 		title: "Supervisor",
+		tipe: "Pengurus Inti",
 		jabatan: ["Supervisor", "Supervisor"],
-		bph: ["Ahmad Farhan", "Fawwaz Roja M"],
+		bph: ["Ahmad Farhan", "Fawwaz Roja M."],
 		tupoksi:
 			"Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk " +
 			"disampaikan pada pihak-pihak terkait demi terwujudnya perjuangan aspirasi kesejahteraan mahasiswa.",
@@ -30,6 +43,7 @@ export const kemenbiroList = [
 	{
 		id: "psdi",
 		title: "Pengembangan Sumber Daya Internal",
+		tipe: "Pengurus Inti",
 		jabatan: [
 			"Koordinator",
 			"Wakil Koodinator",
@@ -41,8 +55,8 @@ export const kemenbiroList = [
 			"Anggota",
 		],
 		bph: [
-			"Yusuf Putra A",
-			"Nisa Usrifatul J",
+			"Yusuf Putra A.",
+			"Nisa Usrifatul J.",
 			"Tiffany Rizka F.",
 			"M. Lukman Wibowo",
 			"M. Irfan Nugraha",
@@ -57,11 +71,12 @@ export const kemenbiroList = [
 	{
 		id: "psdm",
 		title: "Pengembangan Sumber Daya Manusia",
-		jabatan: ["Menteri", "Dirjen Dalam Negeri", "Dirjen Luar Negeri"],
-		bph: ["Rangga Baghas N", "Fadhil Arif M", "M. Guntur Dermawan"],
+		tipe: "Kementerian",
+		jabatan: ["Menteri", "Dirjen Kaderisasi", "Dirjen P2M"],
+		bph: ["Rangga Baghas N.", "Fadhil Arif M.", "M. Guntur Dermawan"],
 		tupoksi:
 			"Bertanggung jawab dalama Pembentukan Karakter dan Pengembangan Potensi Sumber Daya Manusia Mahasiswa FILKOM untuk menciptakan karakter dan kemampuan Mahasiswa yang ideal dalam kehidupan Kampus hingga Pasca Kampus" +
-			"\nMelaksanakan Fungsi Kaderisasi secara terbuka untuk melakukan Pembangunan karakter awal mahasiswa yang mengutamakan peran-peran utama mahasiswa yang berbasi kepemimpinan, moral dan penanaman rasa cinta fakultas." +
+			", melaksanakan Fungsi Kaderisasi secara terbuka untuk melakukan Pembangunan karakter awal mahasiswa yang mengutamakan peran-peran utama mahasiswa yang berbasi kepemimpinan, moral dan penanaman rasa cinta fakultas." +
 			"Mengembangkan dan Memberdayakan Sumber Daya Mahasiswa FILKOM ynag berbasisi Kepemimpinan dan Keorganisasian dengan tujuan mempersiapkan Sumber Daya Manusia yang unggul demi persiapan kehidupan Pasca Kampus.",
 		proker: [
 			"PK2MABA & STARTUP ACADEMY",
@@ -76,8 +91,8 @@ export const kemenbiroList = [
 			"Andriko Fajar Prakoso",
 			"Dwinanda Romolo",
 			"Hanifa Putri Rahima",
-			"Huriyah Anisah N Humairoh",
-			"Khadija Rahmanisa P. Pohan",
+			"Huriyah Anisah N. Humairoh",
+			"Khadija Rahmanisa P.P.",
 			"Muhammad Makbul Zaid",
 			"Raudhotul Jannah",
 			"Zeta Zidanne Bihesa",
@@ -86,6 +101,7 @@ export const kemenbiroList = [
 	{
 		id: "perhub",
 		title: "Perhubungan",
+		tipe: "Kementerian",
 		jabatan: ["Menteri", "Dirjen Dalam Negeri", "Dirjen Luar Negeri"],
 		bph: ["Dito William H.", "Adi Wiyanto", "M. Hardian Ghaffari"],
 		tupoksi:
@@ -119,8 +135,9 @@ export const kemenbiroList = [
 	{
 		id: "k2p",
 		title: "Keilmuan Karir Prestatif",
+		tipe: "Kementerian",
 		jabatan: ["Menteri", "Wakil Menteri"],
-		bph: ["Vearen Dika S", "M Irfan Yusuf W."],
+		bph: ["Vearen Dika S.", "M Irfan Yusuf W."],
 		tupoksi:
 			"Bertanggung jawab dalam Mengakomodasi dan Mengapresiasi prestasi mahasiswa Filkom di bidang Ilmu Komputer autaupun secara umum. K2P juga bertujuan untuk membantu dan menunjang minat Mahasiswa FILKOM di ranah Karir Ilmu Komputer.",
 		proker: [
@@ -141,6 +158,7 @@ export const kemenbiroList = [
 	{
 		id: "kastrat",
 		title: "Kajian Aksi dan Strategi",
+		tipe: "Kementerian",
 		jabatan: ["Menteri", "Wakil Menteri"],
 		bph: ["Araffathoni Rizqi", "Rafi Arya Siregar"],
 		tupoksi:
@@ -163,8 +181,9 @@ export const kemenbiroList = [
 	{
 		id: "sosling",
 		title: "Sosial Lingkungan",
+		tipe: "Kementerian",
 		jabatan: ["Menteri", "Dirjen Pengmas", "Dirjen LH"],
-		bph: ["Azzahra Princessa", "Dimi Karillah Putra", "Afifah Khairunnisa"],
+		bph: ["Azzahra Princessa S.W.", "Dimi Karillah Putra", "Afifah Khairunnisa"],
 		tupoksi:
 			"Bertanggung jawab di bidang pelayanan masyarakat serta lingkungan hidup dengan melakukan pengembangan melalui program dan aksi nyata yang dapat dilakukan mulai dari agen pencerdasan bangsa di bidang pendidikan, peduli lingkungan hidup bermasyarakat, bantuan sosial yang aktif dan pengabdian kepada masyarakat, serta menciptakan kepedulian sosial terhadap masyarakat." +
 			"Bertanggung jawab di bidang pelayanan masyarakat dengan melakukan pengabdian dalam bentuk aksi nyata dan pencerdasan sebagai upaya menciptakan kesejahteraan masyarakat." +
@@ -194,8 +213,9 @@ export const kemenbiroList = [
 	{
 		id: "advokesma",
 		title: "Advokasi dan Kesejahteraan Mahasiswa",
+		tipe: "Kementerian",
 		jabatan: ["Menteri", "Wakil Menteri"],
-		bph: ["Aruf Rachman", "Carly Vyoletta"],
+		bph: ["Aruf Rachman H.", "Carly Vyoletta S."],
 		tupoksi:
 			"Bertanggungjawab dalam melakukan kegiatan advokasi terhadap permasalahan mahasiswa kepada pihak terkait sebagai bentuk perjuangan aspirasi mahasiswa. Selain itu Advokesma juga bertugas utnuk menghimpun permasalahan dan menyampaikan informasi terkait kesejahteraan mahasiswa." +
 			"Mengkaji kebijakan kampus FILKOM UB dan melakukan fungsi advokasi kepada pihak terkait akan suatu permasalahan dengan tujuan memperjuangkana aspirasi mahasiswa." +
@@ -214,9 +234,9 @@ export const kemenbiroList = [
 		staff: [
 			"Andhika Rizky Fariz",
 			"Ahmad Kholish Fauzan Shobiry",
-			"Graita Sukma Febriansyah T.A",
+			"Graita Sukma F.T.A.",
 			"Ihza Aulya Nanda",
-			"Kautsarratu Athaya Zayyannarantis",
+			"Kautsarratu Athaya Z.",
 			"Mochammad Zava Abbiyansyah",
 			"Nadya Nur Fadhila ",
 			"Sarah Uli Octavia",
@@ -225,8 +245,9 @@ export const kemenbiroList = [
 	{
 		id: "bismit",
 		title: "Bisnis dan Mitra",
+		tipe: "Kebiroan",
 		jabatan: ["Kabiro", "Wakabiro"],
-		bph: ["Arbi Ramadhan", "Rahadian Fitra"],
+		bph: ["Arbi Ramadhan A.A.", "Rahadian Fitra S."],
 		tupoksi:
 			"Bertanggungjawab dalam penghimunan sumber dana secara mandiri dari usaha bisnis kreatif atau menjalin kemitraan dengan perusahaan dan/atau korporasi guna menunjang finansial internal BEM FILKOM UB",
 		proker: [
@@ -236,9 +257,9 @@ export const kemenbiroList = [
 			"BUSINESS WORKSHOP",
 		],
 		staff: [
-			"ALFINA AYU AULIA",
-			"Ferrinda Aprilia K.S.H",
-			"Hanifatul izza",
+			"Alfina Ayu Aulia",
+			"Ferrinda Aprilia K.S.H.",
+			"Hanifatul Izza",
 			"Muhammad Ifa Amrillah",
 			"Wisnumurti",
 		],
@@ -246,6 +267,7 @@ export const kemenbiroList = [
 	{
 		id: "pit",
 		title: "Pengembangan Informasi dan Teknologi",
+		tipe: "Kebiroan",
 		jabatan: ["Kabiro", "Wakabiro"],
 		bph: ["Puras Handharmahua", "Nourman Hajar"],
 		tupoksi:
@@ -266,8 +288,9 @@ export const kemenbiroList = [
 	{
 		id: "adkeu",
 		title: "Administrasi Kesekretariatan dan Keuangan",
+		tipe: "Kebiroan",
 		jabatan: ["Kabiro", "Wakabiro"],
-		bph: ["Civica Mohaemin", "Shahnaz Maulidini"],
+		bph: ["Civica Mohaemin D.", "Shahnaz Maulidini A."],
 		tupoksi:
 			"Bertanggungjawab dalam menunjang kegiatan BEM FILKOM dalam bidang keseketariatan, pengelolaan inventaris dan pengelolaan keuangan." +
 			"Mengelola keuangan internal BEM FILKOM UB dalam bentuk pembukuan dan juga melakukan pengecekan dana yang diajukan oleh Lembaga di FILKOM ataupun pengajuan lomba di lingkup FILKOM UB." +
@@ -281,18 +304,19 @@ export const kemenbiroList = [
 			"LAPORAN KEUANGAN EKSTERNAL",
 		],
 		staff: [
-			"Anatasia Griselda Ferina Budiargo",
+			"Anatasia Griselda Ferina B.",
 			"Annisa Sukmawati",
 			"Devina Dwi pratiwi",
 			"Dyah Ayu Wulandari",
-			"Yushinta Prassanty Antoroputri",
+			"Yushinta Prassanty A.",
 		],
 	},
 	{
 		id: "medinkraf",
 		title: "Media Informasi dan Kreatif",
-		jabatan: ["Kabiro", "Kabag", "Kabag"],
-		bph: ["Rifki Akbar S.", "Ediashta Revindra", "Chusna Farida I."],
+		tipe: "Kebiroan",
+		jabatan: ["Kabiro", "Kabag Medkraf", "Kabag Medinfo"],
+		bph: ["Rifki Akbar S.", "Ediashta Revindra A.", "Chusna Farida I."],
 		tupoksi:
 			"Bertanggungjawab dalam optimalisasi sosial media BEM FILKOM UB dengan pembuatan dan penyebaran informasi secara kreatif terhadap seluruh aktivitas dan kegiatan BEM FILKOM UB melalui media sosial." +
 			"\nMenerjemahkan informasi kedalam Konten Kreatif berupa video dan atau gambar sebagai bentuk penyebaran informasi yang kreatif dan inovatif mengenai kegiatan BEM FILKOM UB." +
@@ -309,10 +333,10 @@ export const kemenbiroList = [
 			"GRAND LAUNCHING BEM FILKOM 2020",
 		],
 		staff: [
-			"Jasmine Pratiwi Putri Paraswati",
-			"Maria Imaculata Astrid W",
+			"Jasmine Pratiwi Putri P.",
+			"Maria Imaculata Astrid W.",
 			"Muhammad Ibrahim Kumail",
-			"Muhammad Magistra Syafiqurrozan",
+			"Muhammad Magistra S.",
 			"Muhammad Rizky Rais",
 			"Muhammad Yusuf Ahmadi",
 			"Rafeilia Safa Nurul Izza",

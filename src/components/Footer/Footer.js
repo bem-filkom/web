@@ -9,14 +9,13 @@ const Footer = () => {
 			direction="row-responsive"
 			fill="horizontal"
 			pad="xlarge"
-			background="acc-3"
+			background="acc-8"
 			justify="center"
 			alignContent="center"
 			gap="large"
 			border={{
 				"color": "acc-5",
-				"size": "medium",
-				"style": "solid",
+				"size": "large",
 				"side": "top"
 			}}
 		>

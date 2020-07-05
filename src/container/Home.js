@@ -1,6 +1,5 @@
 import React from "react";
 import {Paragraph, Text, Box, Heading, Image, Carousel} from "grommet";
-import {CaretDown} from "grommet-icons";
 import InstagramPost from "../components/InstagramPost";
 
 const Home = () => {
@@ -11,7 +10,7 @@ const Home = () => {
 					"position": "center",
 					"repeat": "no-repeat",
 					"size": "cover",
-					"image": "url(/assets/landing.jpg)"
+					"image": "url(/assets/landingnew.jpg)"
 				}}
 				height={{"max": "large"}}
 				// border={{
@@ -20,6 +19,11 @@ const Home = () => {
 				// 	"style": "solid",
 				// 	"side": "bottom"
 				// }}
+				border={{
+					color: "acc-5",
+					size: "large",
+					side: "bottom"
+				}}
 			>
 				<Box
 					background={{
@@ -34,18 +38,28 @@ const Home = () => {
 						"horizontal": "none"
 					}}
 					className="landing-title"
+					animation="fadeIn"
 				>
-					<Heading size="large" textAlign="center" margin="medium" level="1">BEM FILKOM 2020</Heading>
-					<Heading textAlign="center" level="2" size="small" margin={{"top": "small", "bottom": "large"}}>
-						- Kabinet Elaborasi Makna -
+					<Heading size="large" textAlign="center" margin={{top: "large", bottom: "small"}} pad={{horizontal: "medium"}} level="1" className="headingPop">
+						BEM FILKOM 2020
 					</Heading>
-					<Box animation="jiggle"><CaretDown color="white" size="large"/></Box>
+					<Heading textAlign="center" level="2" size="small" margin={{top: "none", bottom: "large"}} pad={{horizontal: "medium"}} className="headingPop">
+						Kabinet Elaborasi Makna
+					</Heading>
+					<Box margin={{horizontal: "medium", top: "medium", bottom: "large"}} animation="fadeIn">
+						<Text size="xlarge">▼</Text>
+					</Box>
 				</Box>
 			</Box>
 			
 			<Box
 				id="sambutan" background="acc-8" direction="row-responsive" align="center" justify="center"
 				pad="large" gap="large"
+				border={{
+					color: "acc-5",
+					size: "large",
+					side: "bottom"
+				}}
 			>
 				<Heading alignSelf="center" level="2" size="medium">
 					<Text color="brand" size="large">Sambutan hangat</Text><br/><br/>
@@ -55,11 +69,14 @@ const Home = () => {
 				</Heading>
 				<Box
 					fill="vertical"
+					style={{
+						filter: "brightness(85%) contrast(110%)"
+					}}
 					background={{
 						"position": "center",
 						"repeat": "no-repeat",
 						"size": "contain",
-						"image": "url(/assets/preswapres.png)"
+						"image": "url(/assets/preswapresnew.png)"
 					}}
 					basis="1/3"
 					height={{"min": "medium"}}
