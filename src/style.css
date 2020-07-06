@@ -122,8 +122,8 @@ html, body {
 
 .groupFoto {
     position: absolute;
-    top: 48%;
-    left: 49%;
+    top: 45%;
+    left: 52%;
     margin-right: -50%;
     transform: translate(-50%,-50%);
     filter: brightness(110%) saturate(70%) drop-shadow(0 0 20px #a04469);

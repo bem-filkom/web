@@ -76,7 +76,7 @@ const KemenBiro = () => {
 					<Box className="ellipse" animation="pulse">
 						<Image
 							style={{
-								width: "300px",
+								width: "280px",
 								maxWidth: "80vw",
 								filter: "saturate(70%) brightness(110%)"
 							}}
