@@ -82,7 +82,8 @@ export const kemenbiroList = [
 		proker: [
 			"PK2MABA & STARTUP ACADEMY",
 			"LOKAKARYA KADERISASI 2.0",
-			"STAFF MUDA BEM FILKOM INAUGURASI FILKOM",
+			"STAFF MUDA BEM FILKOM",
+			"INAUGURASI FILKOM",
 			"LKMM-TM",
 			"LEADERS OF TOMORROW",
 			"FILAFEST",
@@ -110,15 +111,15 @@ export const kemenbiroList = [
 			"menjalin koordinasi, konsolidasi dan monitoring terhadap Lembaga Kemahasiswaan FILKOM UB, " +
 			"menjalin Hubungan dan Koordinasi antara pihak Eksternal FILKOM UB dan BEM FILKOM UB.",
 		proker: [
-			"GRAND LAUNCING LEMBAGA DAN KOMUNITAS FILKOM",
-			"SAMBANG",
-			"FORUM KOORDINASI ",
+			"GRAND LAUNCHING LEMBAGA DAN KOMUNITAS FILKOM",
+			"SAMBANG LEMBAGA",
+			"FORUM ALUMNI",
 			"LEMBAGA D-DAY",
 			"LEMBAGA AWARDS",
-			"AUDIT CITRA INTERNAL",
 			"STUDI BANDING",
-			"STUDI EKSKURSI",
+			"MONITORING DAN TURUN LAPANG",
 			"FILKOM GOES TO SCHOOL (FGTS)",
+			"AUDIT CITRA INTERNAL",
 			"AUDIT CITRA EKSTERNAL",
 		],
 		staff: [
@@ -142,11 +143,13 @@ export const kemenbiroList = [
 		tupoksi:
 			"Bertanggung jawab dalam Mengakomodasi dan Mengapresiasi prestasi mahasiswa Filkom di bidang Ilmu Komputer autaupun secara umum. K2P juga bertujuan untuk membantu dan menunjang minat Mahasiswa FILKOM di ranah Karir Ilmu Komputer.",
 		proker: [
-			"HOLOGY 3.0 (House OF Technology)",
+			"HOLOGY 3.0 (House of Technology)",
 			"IT TALK (Inspiration Technology Talk)",
 			"MAWAPRES FILKOM",
 			"KANAL PRESTASI",
 			"FILKOM PINTAR",
+			"CAREER HACK",
+			"CAREER INFO",
 		],
 		staff: [
 			"Dhania Tami Wijaya",
@@ -165,11 +168,11 @@ export const kemenbiroList = [
 		tupoksi:
 			"Bertanggungjawab dalam mengawal isu-isu strategis dengan melakukan pencerdasan, propaganda, dan pengkajian terhadap isu di ranah universitas, regional, nasional, maupun internasional.",
 		proker: [
+			"FILKOM BERBANGSA",
 			"KASUS APA",
 			"RAPOR MERAH",
 			"JAVA",
 			"PANSOS",
-			"SEMINAR KEBANGSAAN, KEWARGANEGARAAN DAN ANTI-NARKOBA",
 		],
 		staff: [
 			"Farid Syauqi Nirwan",
@@ -194,9 +197,10 @@ export const kemenbiroList = [
 			"SOCIAL ISSUE ON FOCUS",
 			"FILKOM RAMADHAN",
 			"FILKOM PEDULI",
+			"#TREEFORLIFE",
+			"SOCIAL INSIGHT",
 			"FILKOM SIGN",
-			"TREE FOR LIFE",
-			"ACT FOR ENVIRONMENTAL ISSUE",
+			"ACT FOR ENVIRONMENTAL ISSUES",
 			"FILKOM BERSIH",
 			"E-UPDATE",
 		],
