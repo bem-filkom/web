@@ -99,7 +99,7 @@ const Home = () => {
 						Elaborasi Makna mengajak seluruh elemen dalam menggarap suatu ide yang bernilai menjadi sebuah
 						kreasi yang bermanfaat bagi FILKOM, Brawijaya dan Indonesia!<br/><br/>
 						<Text weight="bold" size="small" color="acc-9">
-							BEM FILKOM 2020 | Bangun Nilai, Cipta Kreasi!
+							BEM FILKOM 2020 - Bangun Nilai, Cipta Kreasi!
 						</Text>
 					</Paragraph>
 				</Box>

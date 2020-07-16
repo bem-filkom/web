@@ -7,7 +7,8 @@ const InstagramPost = () => {
 	const [isLoading, setIsLoading] = useState(true);
 	useEffect(() => {
 		async function fetchData() {
-			const result = await fetch("https://cors-anywhere.herokuapp.com/https://bemfilkom.ub.ac.id/secure/api/instapost/?username=bemfilkomub", {
+			// const result = await fetch("https://cors-anywhere.herokuapp.com/https://bemfilkom.ub.ac.id/secure/api/instapost/?username=bemfilkomub", {
+			const result = await fetch(atob("aHR0cHM6Ly9iZW1maWxrb20udWIuYWMuaWQvc2VjdXJlL2FwaS9pbnN0YXBvc3QvP3VzZXJuYW1lPWJlbWZpbGtvbXVi"), {
 				method: "GET",
 				headers: {
 					"Content-Type": "application/json"
@@ -15,7 +16,6 @@ const InstagramPost = () => {
 			});
 			let res = await result.json();
 			setData(res);
-			console.log(data);
 			setIsLoading(false);
 		}
 		
@@ -43,8 +43,8 @@ const InstagramPost = () => {
 					<span>
 						<Anchor target="_blank" color="acc-9" href="https://www.instagram.com/bemfilkomub/">
 							@bemfilkomub
-						</Anchor>&nbsp;&nbsp;|&nbsp;&nbsp;Followers: ///&nbsp;&nbsp;|&nbsp;&nbsp;
-						Following: ///&nbsp;&nbsp;|&nbsp;&nbsp;Total Post: ///
+						</Anchor>&nbsp;&nbsp;|&nbsp;&nbsp;Followers: -&nbsp;&nbsp;|&nbsp;&nbsp;
+						Following: -&nbsp;&nbsp;|&nbsp;&nbsp;Total Post: -
 					</span>
 				) : (
 					<span>

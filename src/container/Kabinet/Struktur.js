@@ -1,6 +1,6 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import {Box, Heading, Image} from "grommet";
+import {Box, Image} from "grommet";
 
 const StrukturKabinet = () => {
 	return (

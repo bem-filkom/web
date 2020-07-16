@@ -4,13 +4,6 @@ import { withRouter } from "react-router-dom";
 const ScrollToTop = (props) => {
 	
 	useEffect(() => {
-		console.log(props);
-		// Keep default behavior of restoring scroll position when user:
-		// - clicked back button
-		// - clicked on a link that programmatically calls `history.goBack()`
-		// - manually changed the URL in the address bar (here we might want
-		// to scroll to top, but we can't differentiate it from the others)
-		// In all other cases, check fragment/scroll to top
 		// eslint-disable-next-line react/prop-types
 		let hash = props.location.hash;
 		if (hash) {
