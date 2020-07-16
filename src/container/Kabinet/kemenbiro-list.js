@@ -7,8 +7,7 @@ export const kemenbiroList = [
 		jabatan: ["Presiden BEM"],
 		bph: ["M. Verrel Radiman"],
 		tupoksi:
-			"Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk " +
-			"disampaikan pada pihak-pihak terkait demi terwujudnya perjuangan aspirasi kesejahteraan mahasiswa.",
+			"Pengambil kebijakan tertinggi serta bertanggung jawab akan segala kegiatan dan aktivitas BEM FILKOM UB yang menjalankan fungsi kepemimpinan secara umum.",
 	},
 	{
 		id: "wakilpresiden",
@@ -17,8 +16,7 @@ export const kemenbiroList = [
 		jabatan: ["Wakil Presiden BEM"],
 		bph: ["M. Jordan Farrell"],
 		tupoksi:
-			"Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk " +
-			"disampaikan pada pihak-pihak terkait demi terwujudnya perjuangan aspirasi kesejahteraan mahasiswa.",
+			"Mendampingi dan membantu Presiden BEM dalam menjalankan tugasnya serta menggantikan fungsi dan peran Presiden BEM jika berhalangan. Wakil Presiden BEM juga bertanggung jawab akan segala kegiatan dan aktivitas BEM FILKOM UB bersama Presiden BEM.",
 	},
 	{
 		id: "sekpim",
@@ -27,8 +25,7 @@ export const kemenbiroList = [
 		jabatan: ["Sekretaris Pimpinan"],
 		bph: ["Jeowandha Ria Wiyani"],
 		tupoksi:
-			"Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk " +
-			"disampaikan pada pihak-pihak terkait demi terwujudnya perjuangan aspirasi kesejahteraan mahasiswa.",
+			"Bertanggung jawab dalam mengkoordinasikan agenda dari Presiden dan Wakil Presiden BEM FILKOM UB. Sekretaris Pimpinan juga bertanggung jawab dalam hal administratif berhubungan dengan program kerja BEM FILKOM UB untuk pelaporan kepada Presiden dan Wakil Presiden BEM maupun publik.",
 	},
 	{
 		id: "supervisor",
@@ -37,8 +34,7 @@ export const kemenbiroList = [
 		jabatan: ["Supervisor", "Supervisor"],
 		bph: ["Ahmad Farhan", "Fawwaz Roja M."],
 		tupoksi:
-			"Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk " +
-			"disampaikan pada pihak-pihak terkait demi terwujudnya perjuangan aspirasi kesejahteraan mahasiswa.",
+			"Melakukan pengawasan terhadap kementerian dan biro BEM FILKOM UB terkait dengan Goals Kementerian dan Ketercapaian program kerja. Selain itu, supervisor juga melakukan koordinasi dan sinkronisasi kementerian dan biro BEM FILKOM UB.",
 	},
 	{
 		id: "psdi",
@@ -65,8 +61,13 @@ export const kemenbiroList = [
 			"Onky Soerya N.U.",
 		],
 		tupoksi:
-			"Bertanggungjawab dalam penghimpunan permasalahan dan advokasi permasalahan mahasiswa untuk " +
-			"disampaikan pada pihak-pihak terkait demi terwujudnya perjuangan aspirasi kesejahteraan mahasiswa.",
+			"Melakukan fungsi Monitoring dan Evaluasi terhadap kinerja dan personality sumber daya manusia BEM FILKOM UB. Selain itu PSDI juga bertugas sebagai inisiator dari Peningkatan Kapabilitas (Upgrading), dan Peningkatan Soliditas (Bonding) seluruh sumber daya manusia BEM FILKOM UB berdasarkan hasil monitoring dan evaluasi.",
+		proker: [
+			"TRAINING ORGANIZATION",
+			"UPGRADING",
+			"BONDING",
+			"MONITORING AND EVALUATION"
+		]
 	},
 	{
 		id: "psdm",
@@ -75,9 +76,9 @@ export const kemenbiroList = [
 		jabatan: ["Menteri", "Dirjen Kaderisasi", "Dirjen P2M"],
 		bph: ["Rangga Baghas N.", "Fadhil Arif M.", "M. Guntur Dermawan"],
 		tupoksi:
-			"Bertanggung jawab dalama Pembentukan Karakter dan Pengembangan Potensi Sumber Daya Manusia Mahasiswa FILKOM untuk menciptakan karakter dan kemampuan Mahasiswa yang ideal dalam kehidupan Kampus hingga Pasca Kampus" +
+			"Bertanggung jawab dalama Pembentukan Karakter dan Pengembangan Potensi Sumber Daya Manusia Mahasiswa FILKOM untuk menciptakan karakter dan kemampuan Mahasiswa yang ideal dalam kehidupan kampus hingga Pasca Kampus" +
 			", melaksanakan Fungsi Kaderisasi secara terbuka untuk melakukan Pembangunan karakter awal mahasiswa yang mengutamakan peran-peran utama mahasiswa yang berbasi kepemimpinan, moral dan penanaman rasa cinta fakultas." +
-			"Mengembangkan dan Memberdayakan Sumber Daya Mahasiswa FILKOM ynag berbasisi Kepemimpinan dan Keorganisasian dengan tujuan mempersiapkan Sumber Daya Manusia yang unggul demi persiapan kehidupan Pasca Kampus.",
+			"Mengembangkan dan Memberdayakan Sumber Daya Mahasiswa FILKOM ynag berbasis Kepemimpinan dan Keorganisasian dengan tujuan mempersiapkan Sumber Daya Manusia yang unggul demi persiapan kehidupan Pasca Kampus.",
 		proker: [
 			"PK2MABA & STARTUP ACADEMY",
 			"LOKAKARYA KADERISASI 2.0",
@@ -105,9 +106,9 @@ export const kemenbiroList = [
 		jabatan: ["Menteri", "Dirjen Dalam Negeri", "Dirjen Luar Negeri"],
 		bph: ["Dito William H.", "Adi Wiyanto", "M. Hardian Ghaffari"],
 		tupoksi:
-			"Bertanggung jawab dalam menjalin hubungan dan koordinasi dengan lembaga mahasiswa FILKOM UB dan pihak Eksternal BEM FILKOM UB." +
-			"Menjalin Koordinasi, Konsolidasi dan Monitoring terhadap Lembaga Kemahasiswaan FILKOM UB" +
-			"Menjalin Hubungan dan Koordinasi antara pihak Eksternal FILKOM UB dan BEM FILKOM UB",
+			"Bertanggung jawab dalam menjalin hubungan dan koordinasi dengan lembaga mahasiswa FILKOM UB dan pihak Eksternal BEM FILKOM UB, " +
+			"menjalin koordinasi, konsolidasi dan monitoring terhadap Lembaga Kemahasiswaan FILKOM UB, " +
+			"menjalin Hubungan dan Koordinasi antara pihak Eksternal FILKOM UB dan BEM FILKOM UB.",
 		proker: [
 			"GRAND LAUNCING LEMBAGA DAN KOMUNITAS FILKOM",
 			"SAMBANG",
@@ -162,7 +163,7 @@ export const kemenbiroList = [
 		jabatan: ["Menteri", "Wakil Menteri"],
 		bph: ["Araffathoni Rizqi", "Rafi Arya Siregar"],
 		tupoksi:
-			"Bertanggungjawab dalam mengawal isu-isu strategis dengan melakukan pencerdasan, propaganda dan pengkajian terhadap isu di ranah universitas, regional, nasional, maupun internasional.",
+			"Bertanggungjawab dalam mengawal isu-isu strategis dengan melakukan pencerdasan, propaganda, dan pengkajian terhadap isu di ranah universitas, regional, nasional, maupun internasional.",
 		proker: [
 			"KASUS APA",
 			"RAPOR MERAH",

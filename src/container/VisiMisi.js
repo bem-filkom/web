@@ -93,8 +93,7 @@ const VisiMisi = () => {
 						<ol>
 							<li className="space-li space-li-top">
 								Membangun iklim internal BEM FILKOM UB yang <b> inklusif </b>
-								dan
-								<b> profesional </b> bernafaskan kekeluargaan.
+								dan <b> profesional </b> bernafaskan kekeluargaan.
 							</li>
 							<li className="space-li">
 								<b>Bekerja</b> sama secara <b>dinamis</b> dengan seluruh
@@ -153,9 +152,11 @@ const VisiMisi = () => {
 					direction="row-responsive"
 					width={{max: "768px"}}
 					alignSelf="center"
+					align="start"
+					justify="center"
 					gap="medium"
 				>
-					<Box width={{max: "90px"}} justify="start" align="center" margin="medium">
+					<Box width={{min: "100px"}} justify="start" align="center" margin="medium">
 						<Box className="boxAG" round="small" pad="small" background="acc-8">
 							<Image
 								style={{maxWidth: "140px", maxHeight: "140px"}}
@@ -168,7 +169,7 @@ const VisiMisi = () => {
 							<p>INKLUSIF PROFESIONAL</p>
 						</Text>
 					</Box>
-					<Box width={{max: "90px"}} justify="start" align="center" margin="medium">
+					<Box width={{min: "100px"}} justify="start" align="center" margin="medium">
 						<Box className="boxAG" round="small" pad="small" background="acc-8">
 							<Image
 								style={{maxWidth: "140px", maxHeight: "140px"}}
@@ -181,7 +182,7 @@ const VisiMisi = () => {
 							<p>BEKERJASAMA DINAMIS</p>
 						</Text>
 					</Box>
-					<Box width={{max: "90px"}} justify="start" align="center" margin="medium">
+					<Box width={{min: "100px"}} justify="start" align="center" margin="medium">
 						<Box className="boxAG" round="small" pad="small" background="acc-8">
 							<Image
 								style={{maxWidth: "140px", maxHeight: "140px"}}
@@ -194,7 +195,7 @@ const VisiMisi = () => {
 							<p>INISIATOR PERGERAKAN</p>
 						</Text>
 					</Box>
-					<Box width={{max: "90px"}} justify="start" align="center" margin="medium">
+					<Box width={{min: "100px"}} justify="start" align="center" margin="medium">
 						<Box className="boxAG" round="small" pad="small" background="acc-8">
 							<Image
 								style={{maxWidth: "140px", maxHeight: "140px"}}
@@ -207,14 +208,10 @@ const VisiMisi = () => {
 							<p>PENGEMBANGAN SUPORTIF</p>
 						</Text>
 					</Box>
-					<Box width={{max: "90px"}} justify="start" align="center" margin="medium">
+					<Box width={{min: "100px"}} justify="start" align="center" margin="medium">
 						<Box className="boxAG" round="small" pad="small" background="acc-8">
 							<Image
-								style={{
-									maxWidth: "140px",
-									maxHeight: "140px",
-									padding: "12px 12px 12px 0px",
-								}}
+								style={{maxWidth: "140px", maxHeight: "140px"}}
 								fill
 								fit="contain"
 								src="/assets/arahGerak/ag5.png"

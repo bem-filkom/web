@@ -38,15 +38,20 @@ const Home = () => {
 						"horizontal": "none"
 					}}
 					className="landing-title"
-					animation="fadeIn"
 				>
-					<Heading size="large" textAlign="center" margin={{top: "large", bottom: "small"}} pad={{horizontal: "medium"}} level="1" className="headingPop">
+					<Heading
+						size="large" textAlign="center" margin={{top: "large", bottom: "small"}} level="1" className="headingPop"
+						style={{padding: "0 20px"}}
+					>
 						BEM FILKOM 2020
 					</Heading>
-					<Heading textAlign="center" level="2" size="small" margin={{top: "none", bottom: "large"}} pad={{horizontal: "medium"}} className="headingPop">
+					<Heading
+						textAlign="center" level="2" size="small" margin={{top: "none", bottom: "large"}} className="headingPop"
+						style={{padding: "0 20px"}}
+					>
 						Kabinet Elaborasi Makna
 					</Heading>
-					<Box margin={{horizontal: "medium", top: "medium", bottom: "large"}} animation="fadeIn">
+					<Box margin={{horizontal: "medium", top: "medium", bottom: "large"}} animation="pulse">
 						<Text size="xlarge">▼</Text>
 					</Box>
 				</Box>
@@ -70,24 +75,28 @@ const Home = () => {
 				<Box
 					fill="vertical"
 					style={{
-						filter: "brightness(85%) contrast(110%)"
+						filter: "contrast(110%)"
 					}}
 					background={{
 						"position": "center",
 						"repeat": "no-repeat",
 						"size": "contain",
-						"image": "url(/assets/preswapresnew.png)"
+						"image": "url(/assets/preswapresnew.jpg)"
 					}}
 					basis="1/3"
 					height={{"min": "medium"}}
 				/>
 				<Box basis="1/3">
-					<Paragraph fill style={{"textAlign": "justify"}}>
-						Assalamu alaikum wa rahmatullahi wa barakatuh!<br/><br/>Pada periode ini, kami memiliki fokus
-						arah gerak yaitu penguatan kompetensi mahasiswa Fakultas Ekonomika dan Bisnis Universitas Gadjah
-						Mada (FEB UGM) guna memberikan kontribusi bagi Indonesia melalui bidang dan keahliannya
-						masing-masing.<br/><br/>Hidup mahasiswa!<br/><br/><Text weight="bold" color="accent-4">M Verrel
-						Radiman &<br/>M Jordan Farrell</Text>
+					<Paragraph size="small" className="poppify" fill style={{"textAlign": "justify"}}>
+						<Text weight="bold" size="small" color="acc-9">
+							Assalamu alaikum wr wb. Shalom. Om Swastyastu. Namo Buddhaya Rahayu. Salam kebajikan untuk kita semua.<br/><br/>
+						</Text>
+						BEM FILKOM UB sebagai lembaga eksekutif tertinggi di tingkat fakultas memiliki tanggung jawab dalam memberikan pelayanan, kontribusi, serta partisipasi terbaik untuk Civitas Akademika FILKOM, Brawijaya dan juga masyarakat Indonesia.<br/><br/>
+						Kabinet Elaborasi Makna bergerak sesuai dengan visi dan misi yang menjadi fundamental dalam mencapai tujuan yang telah ditetapkan. Dengan mengedepankan nilai dan juga kerjasama dalam pelaksanaannya, tentu akan menghasilkan suatu dampak yang dapat dirasakan secara menyeluruh. Berkembang tidak hanya secara individual, melainkan berkembang dengan seluruh pemangku kepentingan.<br/><br/>
+						Elaborasi Makna mengajak seluruh elemen dalam menggarap suatu ide yang bernilai menjadi sebuah kreasi yang bermanfaat bagi FILKOM, Brawijaya dan Indonesia!<br/><br/>
+						<Text weight="bold" size="small" color="acc-9">
+							BEM FILKOM 2020 | Bangun Nilai, Cipta Kreasi!
+						</Text>
 					</Paragraph>
 				</Box>
 			</Box>

@@ -3,7 +3,7 @@ import {Box, Text, DropButton} from "grommet";
 
 function NavbarDropButton(props) {
 	return (
-		<DropButton {...props} plain dropAlign={{"top": "top", "right": "right"}} dropContent={
+		<DropButton {...props} plain dropAlign={{"top": "top"}} dropContent={
 			<Box
 				background="acc-10" overflow={{"vertical": "auto"}}
 				height={{"max": "medium"}} gap="xsmall"

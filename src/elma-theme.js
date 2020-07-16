@@ -3,8 +3,7 @@ export const elmaTheme = {
 	"global": {
 		// font body text
 		"font": {
-			"family": "'Nunito Sans', Helvetica, Arial, sans-serif",
-			// "family": "'Poppins', Helvetica, Arial, sans-serif",
+			"family": "'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
 		},
 		"colors": {
 			"icon": {
@@ -25,7 +24,7 @@ export const elmaTheme = {
 				"dark": "rgba(255,255,255,0.33)",
 				"light": "rgba(0,0,0,0.33)"
 			},
-			"brand": "#c73a7c",
+			"brand": "#ae4f76",
 			"control": {
 				"dark": "accent-1",
 				"light": "brand"
@@ -85,17 +84,17 @@ export const elmaTheme = {
 	},
 	"heading": {
 		"font": {
-			"family": "Poppins, Helvetica, Arial, sans-serif"
+			"family": "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
 		}
 	},
 	"headingPop": {
 		"font": {
-			"family": "Poppins, sans-serif"
+			"family": "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
 		}
 	},
 	"text": {
 		"font": {
-			"family": "Poppins, sans-serif"
+			"family": "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
 		}
 	}
 };

@@ -85,7 +85,11 @@ const KemenBiro = () => {
 					</Box>
 					<Image
 						className="groupFoto"
-						style={{width: "400px", maxWidth: "80vw"}}
+						style={{
+							width: "400px",
+							maxWidth: "80vw",
+							imageRendering: "crisp-edges"
+						}}
 						fit="contain"
 						src={`/assets/kabinet/${kemenbiro.id}.png`}
 					/>

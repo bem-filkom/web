@@ -1,5 +1,5 @@
 import {Anchor, Box, Text} from "grommet";
-import {Globe, Instagram, Link, Map, Twitter, UserAdd, Youtube} from "grommet-icons";
+import {Instagram, Link, LinkNext, Map, Twitter, UserAdd, Youtube} from "grommet-icons";
 import React from "react";
 
 const Footer = () => {
@@ -36,8 +36,8 @@ const Footer = () => {
 			>
 				<Text className="footer-title" color="acc-6" size="large"><Link/> Tautan</Text><br/>
 				<Anchor
-					color="acc-6" href="http://filkom.ub.ac.id/" label="FILKOM UB"
-					icon={<Globe/>} target="_blank"
+					href="http://filkom.ub.ac.id/" label="FILKOM UB"
+					icon={<LinkNext/>} target="_blank"
 				/>
 				{/*<Anchor*/}
 				{/*	color="light-6" href="https://bemfilkom.ub.ac.id/filkompedia" label="Filkompedia" icon={<Globe/>}*/}
@@ -55,19 +55,19 @@ const Footer = () => {
 			>
 				<Text className="footer-title" color="acc-6" size="large"><UserAdd/> Ikuti kami</Text><br/>
 				<Anchor
-					color="acc-6" href="https://www.instagram.com/bemfilkomub/" label="@bemfilkomub"
+					href="https://www.instagram.com/bemfilkomub/" label="@bemfilkomub"
 					icon={<Instagram/>} target="_blank"
 				/>
 				<Anchor
-					color="acc-6" href="line://ti/p/@bemfilkomub" label="@bemfilkomub" target="_blank"
-					icon={<img src="/assets/linelogo.png" className="acc-6" style={{"width": 24}} alt="LINE"/>}
+					href="line://ti/p/@bemfilkomub" label="@bemfilkomub" target="_blank"
+					icon={<img src="/assets/linelogo.png" className="acc-6 whitify" style={{"width": 24}} alt="LINE"/>}
 				/>
 				<Anchor
-					color="acc-6" href="https://twitter.com/BEMFILKOMUB" label="@BEMFILKOMUB" icon={<Twitter/>}
+					href="https://twitter.com/BEMFILKOMUB" label="@BEMFILKOMUB" icon={<Twitter/>}
 					target="_blank"
 				/>
 				<Anchor
-					color="acc-6" href="https://www.youtube.com/channel/UCLAmrHwP0hvOjPGHacMThZQ"
+					href="https://www.youtube.com/channel/UCLAmrHwP0hvOjPGHacMThZQ"
 					label="BEM FILKOM UB" icon={<Youtube/>} target="_blank"
 				/>
 			</Box>

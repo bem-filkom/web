@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, HashRouter as Router, Switch} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import {Grommet} from "grommet";
 import {Helmet} from "react-helmet";
 import {deepMerge} from "grommet/utils";

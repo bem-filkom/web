@@ -50,19 +50,22 @@ function Navbar() {
 				className={isOpened ? "navbar-menu opened" : "navbar-menu"}
 			>
 				<NavbarButton path="/visimisi/" text="Visi & Misi"/>
-				<NavbarDropButton text="Kabinet">
-					<NavbarButton path="/kabinet/" text="Struktur"/>
+				<NavbarDropButton highlight text="Kabinet">
+					<NavbarButton highlight path="/kabinet/" text="Struktur"/>
+					<hr/>
 					<NavbarButton path="/kabinet/presiden" text="Presiden"/>
 					<NavbarButton path="/kabinet/wakilpresiden" text="Wakil Presiden"/>
 					<NavbarButton path="/kabinet/sekpim" text="Sekretaris Pimpinan"/>
 					<NavbarButton path="/kabinet/supervisor" text="Supervisor"/>
 					<NavbarButton path="/kabinet/psdi" text="PSDI"/>
+					<hr/>
 					<NavbarButton path="/kabinet/psdm" text="PSDM"/>
 					<NavbarButton path="/kabinet/k2p" text="K2P"/>
 					<NavbarButton path="/kabinet/perhub" text="Perhub"/>
 					<NavbarButton path="/kabinet/sosling" text="Sosling"/>
 					<NavbarButton path="/kabinet/kastrat" text="Kastrat"/>
 					<NavbarButton path="/kabinet/advokesma" text="Advokesma"/>
+					<hr/>
 					<NavbarButton path="/kabinet/bismit" text="Bismit"/>
 					<NavbarButton path="/kabinet/pit" text="PIT"/>
 					<NavbarButton path="/kabinet/adkeu" text="Adkeu"/>
@@ -73,11 +76,11 @@ function Navbar() {
 				direction="row-responsive" gap="small" align="center" alignContent="center" alignSelf="center"
 				className={isOpened ? "navbar-menu opened" : "navbar-menu"} pad="none" margin="none"
 			>
-				<NavbarButton highlight extern path="/filkompedia/" disabled text="Coming Soon"/>
-				<NavbarDropButton highlight disabled text="Coming Soon">
-					<NavbarButton extern path="/apps/siperat/" text="SIPERAT"/>
-					<NavbarButton extern path="/apps/bismit/" text="Bismit Apps"/>
-					<NavbarButton extern path="/apps/injam/" text="Integrasi Peminjaman"/>
+				<NavbarButton extern disabled text="Coming Soon"/>
+				<NavbarDropButton disabled text="Coming Soon">
+					{/*<NavbarButton extern path="/apps/siperat/" text="SIPERAT"/>*/}
+					{/*<NavbarButton extern path="/apps/bismit/" text="Bismit Apps"/>*/}
+					{/*<NavbarButton extern path="/apps/injam/" text="Integrasi Peminjaman"/>*/}
 				</NavbarDropButton>
 			</Box>
 		</Header>

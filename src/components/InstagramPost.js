@@ -51,8 +51,8 @@ const InstagramPost = () => {
 						<Anchor target="_blank" color="dark-2" href="https://www.instagram.com/bemfilkomub/">
 							@bemfilkomub
 						</Anchor>&nbsp;&nbsp;|&nbsp;&nbsp;
-						Followers: {data.followers}&nbsp;&nbsp;|&nbsp;&nbsp;Following: {data.following}
-						&nbsp;&nbsp;|&nbsp;&nbsp;Total Post: {data.totalPost}
+						Followers: <b>{data.followers}</b>&nbsp;&nbsp;|&nbsp;&nbsp;Following: <b>{data.following}</b>
+						&nbsp;&nbsp;|&nbsp;&nbsp;Total Post: <b>{data.totalPost}</b>
 					</span>
 				)}
 			</Text>
