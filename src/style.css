@@ -16,6 +16,8 @@ html, body {
     padding-bottom: 1em;
     -webkit-box-shadow: 0 4px 14px 3px rgba(0, 0, 0, 0.30);
     box-shadow: 0 4px 14px 3px rgba(0, 0, 0, 0.30);
+    background-color: rgba(34, 83, 121, 0.9) !important;
+    backdrop-filter: blur(4px)
 }
 
 .navbar-image {
@@ -33,8 +35,12 @@ html, body {
 }
 
 .ig-post {
-    -webkit-box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 17px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 17px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ig-post:hover {
+    box-shadow: 0 0 17px 8px rgba(174, 79, 118, 0.4)
 }
 
 .footer-title {
@@ -85,7 +91,7 @@ html, body {
     }
 
     .navbar-title {
-        display: none!important;
+        display: none !important;
     }
 
     .navbar-logo {
@@ -93,12 +99,12 @@ html, body {
     }
 
     .navbar-menu {
-        display: none!important;
+        display: none !important;
         flex-direction: row !important;
     }
 
     .navbar-menu > * {
-        display: inline-block!important;
+        display: inline-block !important;
     }
 
     .navbar-menu.opened {
@@ -127,7 +133,7 @@ html, body {
     top: 45%;
     left: 52%;
     margin-right: -50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     filter: brightness(110%) saturate(70%) drop-shadow(0 0 20px #a04469);
 }
 
@@ -166,7 +172,7 @@ html, body {
     background: #ae4f76;
 }
 
-#grommetParent.hidden{
+#grommetParent.hidden {
     opacity: 0 !important;
     -webkit-transition: opacity 50ms ease-in-out;
     transition: opacity 50ms ease-in-out;

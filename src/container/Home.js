@@ -1,6 +1,7 @@
 import React from "react";
 import {Paragraph, Text, Box, Heading, Image, Carousel} from "grommet";
 import InstagramPost from "../components/InstagramPost";
+// import {Close, FormClose, LinkNext} from "grommet-icons";
 
 const Home = () => {
 	return (
@@ -13,12 +14,6 @@ const Home = () => {
 					"image": "url(/assets/landingnew.jpg)"
 				}}
 				height={{"max": "large"}}
-				// border={{
-				// 	"color": "accent-3",
-				// 	"size": "medium",
-				// 	"style": "solid",
-				// 	"side": "bottom"
-				// }}
 				border={{
 					color: "acc-5",
 					size: "large",
@@ -40,13 +35,15 @@ const Home = () => {
 					className="landing-title"
 				>
 					<Heading
-						size="large" textAlign="center" margin={{top: "large", bottom: "small"}} level="1" className="headingPop"
+						size="large" textAlign="center" margin={{top: "large", bottom: "small"}} level="1"
+						className="headingPop"
 						style={{padding: "0 20px"}}
 					>
 						BEM FILKOM 2020
 					</Heading>
 					<Heading
-						textAlign="center" level="2" size="small" margin={{top: "none", bottom: "large"}} className="headingPop"
+						textAlign="center" level="2" size="small" margin={{top: "none", bottom: "large"}}
+						className="headingPop"
 						style={{padding: "0 20px"}}
 					>
 						Kabinet Elaborasi Makna
@@ -56,7 +53,6 @@ const Home = () => {
 					</Box>
 				</Box>
 			</Box>
-			
 			<Box
 				id="sambutan" background="acc-8" direction="row-responsive" align="center" justify="center"
 				pad="large" gap="large"
@@ -89,17 +85,58 @@ const Home = () => {
 				<Box basis="1/3">
 					<Paragraph size="small" className="poppify" fill style={{"textAlign": "justify"}}>
 						<Text weight="bold" size="small" color="acc-9">
-							Assalamu alaikum wr wb. Shalom. Om Swastyastu. Namo Buddhaya Rahayu. Salam kebajikan untuk kita semua.<br/><br/>
+							Assalamu alaikum wr wb. Shalom. Om Swastyastu. Namo Buddhaya Rahayu. Salam kebajikan untuk
+							kita semua.<br/><br/>
 						</Text>
-						BEM FILKOM UB sebagai lembaga eksekutif tertinggi di tingkat fakultas memiliki tanggung jawab dalam memberikan pelayanan, kontribusi, serta partisipasi terbaik untuk Civitas Akademika FILKOM, Brawijaya dan juga masyarakat Indonesia.<br/><br/>
-						Kabinet Elaborasi Makna bergerak sesuai dengan visi dan misi yang menjadi fundamental dalam mencapai tujuan yang telah ditetapkan. Dengan mengedepankan nilai dan juga kerjasama dalam pelaksanaannya, tentu akan menghasilkan suatu dampak yang dapat dirasakan secara menyeluruh. Berkembang tidak hanya secara individual, melainkan berkembang dengan seluruh pemangku kepentingan.<br/><br/>
-						Elaborasi Makna mengajak seluruh elemen dalam menggarap suatu ide yang bernilai menjadi sebuah kreasi yang bermanfaat bagi FILKOM, Brawijaya dan Indonesia!<br/><br/>
+						BEM FILKOM UB sebagai lembaga eksekutif tertinggi di tingkat fakultas memiliki tanggung jawab
+						dalam memberikan pelayanan, kontribusi, serta partisipasi terbaik untuk Civitas Akademika
+						FILKOM, Brawijaya dan juga masyarakat Indonesia.<br/><br/>
+						Kabinet Elaborasi Makna bergerak sesuai dengan visi dan misi yang menjadi fundamental dalam
+						mencapai tujuan yang telah ditetapkan. Dengan mengedepankan nilai dan juga kerjasama dalam
+						pelaksanaannya, tentu akan menghasilkan suatu dampak yang dapat dirasakan secara menyeluruh.
+						Berkembang tidak hanya secara individual, melainkan berkembang dengan seluruh pemangku
+						kepentingan.<br/><br/>
+						Elaborasi Makna mengajak seluruh elemen dalam menggarap suatu ide yang bernilai menjadi sebuah
+						kreasi yang bermanfaat bagi FILKOM, Brawijaya dan Indonesia!<br/><br/>
 						<Text weight="bold" size="small" color="acc-9">
 							BEM FILKOM 2020 | Bangun Nilai, Cipta Kreasi!
 						</Text>
 					</Paragraph>
 				</Box>
 			</Box>
+			
+			{/*<Box*/}
+			{/*	id="sambutan" background="acc-9" direction="row" align="center" justify="center"*/}
+			{/*	pad="small"*/}
+			{/*	border={{*/}
+			{/*		color: "acc-5",*/}
+			{/*		size: "large",*/}
+			{/*		side: "bottom"*/}
+			{/*	}}*/}
+			{/*	style={{display: !quickyClosed ? "flex" : "none"}}*/}
+			{/*>*/}
+			{/*	<Box pad={{horizontal: "small"}}>*/}
+			{/*		<Anchor*/}
+			{/*			color="acc-3" alignSelf="center" label="⨯" size="xlarge"*/}
+			{/*			onClick={() => setQuickyClosed(true)}*/}
+			{/*		/>*/}
+			{/*	</Box>*/}
+			{/*	<Box pad={{horizontal: "small"}}>*/}
+			{/*		<Text textAlign="center" weight="bold" color="white">*/}
+			{/*			Quick Current Info:*/}
+			{/*		</Text>*/}
+			{/*	</Box>*/}
+			{/*	<Box pad={{top: "xsmall", horizontal: "small"}} align="start" justify="center" alignSelf="center">*/}
+			{/*		<Anchor*/}
+			{/*			href="https://s.id/oprechology3" label="Open Recruitment Staff Hology 3.0"*/}
+			{/*			icon={<LinkNext/>} target="_blank" color="acc-1"*/}
+			{/*		/>*/}
+			{/*		<Anchor*/}
+			{/*			href="http://filkom.ub.ac.id/" label="Merchandise FILKOM UB"*/}
+			{/*			icon={<LinkNext/>} target="_blank" color="acc-1"*/}
+			{/*		/>*/}
+			{/*	</Box>*/}
+			{/*</Box>*/}
 			
 			<InstagramPost/>
 			
@@ -117,11 +154,11 @@ const Home = () => {
 						controls={false}
 						width="small"
 						height="small"
-						play={1500}
+						play={1300}
 					>
-						<Image fill fit="contain" src="/assets/mitra/1.png"/>
-						<Image fill fit="contain" src="/assets/mitra/7.png"/>
-						<Image fill fit="contain" src="/assets/mitra/9.png"/>
+						{[...Array(13)].map((x, i) =>
+							<Image key={i} fill fit="contain" src={`/assets/mitra/${i+1}.jpg`}	/>
+						)}
 					</Carousel>
 				</Box>
 			</Box>

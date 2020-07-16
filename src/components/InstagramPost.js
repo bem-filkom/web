@@ -36,19 +36,19 @@ const InstagramPost = () => {
 			}}
 		>
 			<Heading align="center" level="2" size="large">
-				Berita Terbaru
+				Kabar Terbaru
 			</Heading>
 			<Text textAlign="center" margin={{"bottom": "medium"}} color="dark-2" size="medium" alignSelf="center">
 				{isLoading ? (
 					<span>
-						<Anchor target="_blank" color="dark-2" href="https://www.instagram.com/bemfilkomub/">
+						<Anchor target="_blank" color="acc-9" href="https://www.instagram.com/bemfilkomub/">
 							@bemfilkomub
 						</Anchor>&nbsp;&nbsp;|&nbsp;&nbsp;Followers: ///&nbsp;&nbsp;|&nbsp;&nbsp;
 						Following: ///&nbsp;&nbsp;|&nbsp;&nbsp;Total Post: ///
 					</span>
 				) : (
 					<span>
-						<Anchor target="_blank" color="dark-2" href="https://www.instagram.com/bemfilkomub/">
+						<Anchor target="_blank" color="acc-9" href="https://www.instagram.com/bemfilkomub/">
 							@bemfilkomub
 						</Anchor>&nbsp;&nbsp;|&nbsp;&nbsp;
 						Followers: <b>{data.followers}</b>&nbsp;&nbsp;|&nbsp;&nbsp;Following: <b>{data.following}</b>

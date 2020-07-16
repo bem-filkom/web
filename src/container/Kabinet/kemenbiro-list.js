@@ -61,7 +61,7 @@ export const kemenbiroList = [
 			"Onky Soerya N.U.",
 		],
 		tupoksi:
-			"Melakukan fungsi Monitoring dan Evaluasi terhadap kinerja dan personality sumber daya manusia BEM FILKOM UB. Selain itu PSDI juga bertugas sebagai inisiator dari Peningkatan Kapabilitas (Upgrading), dan Peningkatan Soliditas (Bonding) seluruh sumber daya manusia BEM FILKOM UB berdasarkan hasil monitoring dan evaluasi.",
+			"Melakukan fungsi monitoring dan evaluasi terhadap kinerja dan personality sumber daya manusia BEM FILKOM UB. Selain itu PSDI juga bertugas sebagai inisiator dari peningkatan kapabilitas (upgrading) dan peningkatan solidaritas (bonding) seluruh sumber daya manusia BEM FILKOM UB berdasarkan hasil monitoring dan evaluasi.",
 		proker: [
 			"TRAINING ORGANIZATION",
 			"UPGRADING",
@@ -76,9 +76,7 @@ export const kemenbiroList = [
 		jabatan: ["Menteri", "Dirjen Kaderisasi", "Dirjen P2M"],
 		bph: ["Rangga Baghas N.", "Fadhil Arif M.", "M. Guntur Dermawan"],
 		tupoksi:
-			"Bertanggung jawab dalama Pembentukan Karakter dan Pengembangan Potensi Sumber Daya Manusia Mahasiswa FILKOM untuk menciptakan karakter dan kemampuan Mahasiswa yang ideal dalam kehidupan kampus hingga Pasca Kampus" +
-			", melaksanakan Fungsi Kaderisasi secara terbuka untuk melakukan Pembangunan karakter awal mahasiswa yang mengutamakan peran-peran utama mahasiswa yang berbasi kepemimpinan, moral dan penanaman rasa cinta fakultas." +
-			"Mengembangkan dan Memberdayakan Sumber Daya Mahasiswa FILKOM ynag berbasis Kepemimpinan dan Keorganisasian dengan tujuan mempersiapkan Sumber Daya Manusia yang unggul demi persiapan kehidupan Pasca Kampus.",
+			"Bertanggung jawab dalam pembentukan karakter dan Pengembangan Potensi Sumber daya manusia Mahasiswa FILKOM untuk menciptakan karakter dan kemampuan mahasiswa yang ideal dalam kehidupan kampus hingga pasca kampus.",
 		proker: [
 			"PK2MABA & STARTUP ACADEMY",
 			"LOKAKARYA KADERISASI 2.0",
@@ -161,7 +159,7 @@ export const kemenbiroList = [
 	},
 	{
 		id: "kastrat",
-		title: "Kajian Aksi dan Strategi",
+		title: "Kajian dan Aksi Strategis",
 		tipe: "Kementerian",
 		jabatan: ["Menteri", "Wakil Menteri"],
 		bph: ["Araffathoni Rizqi", "Rafi Arya Siregar"],
@@ -184,7 +182,7 @@ export const kemenbiroList = [
 	},
 	{
 		id: "sosling",
-		title: "Sosial Lingkungan",
+		title: "Sosial dan Lingkungan",
 		tipe: "Kementerian",
 		jabatan: ["Menteri", "Dirjen Pengmas", "Dirjen LH"],
 		bph: ["Azzahra Princessa S.W.", "Dimi Karillah Putra", "Afifah Khairunnisa"],
@@ -249,7 +247,7 @@ export const kemenbiroList = [
 	},
 	{
 		id: "bismit",
-		title: "Bisnis dan Mitra",
+		title: "Bisnis dan Kemitraan",
 		tipe: "Kebiroan",
 		jabatan: ["Kabiro", "Wakabiro"],
 		bph: ["Arbi Ramadhan A.A.", "Rahadian Fitra S."],
