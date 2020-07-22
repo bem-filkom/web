@@ -40,7 +40,7 @@ function Navbar() {
 				</Link>
 				<NavbarButton
 					margin="medium" className="navbar-home-mobile" text={isOpened ? "MENU▲" : "MENU▼"}
-					onClick={() => setIsOpened(!isOpened)}
+					onClick={() => setIsOpened(!isOpened)} isMenu
 				/>
 			</Box>
 			

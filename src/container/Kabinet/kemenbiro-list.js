@@ -110,12 +110,10 @@ export const kemenbiroList = [
 			"menjalin Hubungan dan Koordinasi antara pihak Eksternal FILKOM UB dan BEM FILKOM UB.",
 		proker: [
 			"GRAND LAUNCHING LEMBAGA DAN KOMUNITAS FILKOM",
-			"SAMBANG LEMBAGA",
-			"FORUM ALUMNI",
+			"SAMBANG & MONITORING",
 			"LEMBAGA D-DAY",
 			"LEMBAGA AWARDS",
 			"STUDI BANDING",
-			"MONITORING DAN TURUN LAPANG",
 			"FILKOM GOES TO SCHOOL (FGTS)",
 			"AUDIT CITRA INTERNAL",
 			"AUDIT CITRA EKSTERNAL",
@@ -178,6 +176,7 @@ export const kemenbiroList = [
 			"Ivanna Adista Sihombing",
 			"Muhammad Fadhel Haidar",
 			"Nur Alif Firmansyah",
+			"Pramesti Giasasmita M."
 		],
 	},
 	{
@@ -242,6 +241,7 @@ export const kemenbiroList = [
 			"Kautsarratu Athaya Z.",
 			"Mochammad Zava Abbiyansyah",
 			"Nadya Nur Fadhila ",
+			"Rosa Mulyanis Chan",
 			"Sarah Uli Octavia",
 		],
 	},
@@ -338,6 +338,7 @@ export const kemenbiroList = [
 		staff: [
 			"Jasmine Pratiwi Putri P.",
 			"Maria Imaculata Astrid W.",
+			"Muhammad Daffa Rhesa D.",
 			"Muhammad Ibrahim Kumail",
 			"Muhammad Magistra S.",
 			"Muhammad Rizky Rais",

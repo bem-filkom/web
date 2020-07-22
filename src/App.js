@@ -2,6 +2,7 @@ import React from "react";
 import {Route, Switch} from "react-router-dom";
 import {Grommet} from "grommet";
 import {Helmet} from "react-helmet";
+import ReactGA from "react-ga";
 import {deepMerge} from "grommet/utils";
 
 import {elmaTheme} from "./elma-theme";
@@ -21,9 +22,10 @@ import ScrollToTop from "./components/ScrollToTop";
 
 // import ComingSoon from "./container/ComingSoon";
 
-
 //merge default theme and BEM theme
 const bemTheme = deepMerge(grommet, elmaTheme);
+
+ReactGA.initialize("UA-38735593-4", {debug: false});
 
 const App = () => {
 	return (

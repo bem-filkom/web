@@ -8,9 +8,14 @@ function RoutedButton(props) {
 			<Anchor href={props.path}><Button {...props}>{props.children}</Button></Anchor>
 		);
 	} else {
-		return (
-			<Link to={props.path}><Button {...props}>{props.children}</Button></Link>
-		);
+		if (props.isMenu)
+			return (
+				<Button {...props}>{props.children}</Button>
+			);
+		else
+			return (
+				<Link to={props.path}><Button {...props}>{props.children}</Button></Link>
+			);
 	}
 }
 
