@@ -34,19 +34,19 @@ const Footer = () => {
 				align="start"
 				width="small"
 			>
-				<Text className="footer-title" color="acc-6" size="large"><Link/> Tautan</Text><br/>
+				<Text className="footer-title" color="acc-6" size="large"><Link/> Tautan Terkait</Text><br/>
 				<Anchor
 					href="http://filkom.ub.ac.id/" label="FILKOM UB"
 					icon={<LinkNext/>} target="_blank"
 				/>
-				{/*<Anchor*/}
-				{/*	color="light-6" href="https://bemfilkom.ub.ac.id/filkompedia" label="Filkompedia" icon={<Globe/>}*/}
-				{/*	target="_blank"*/}
-				{/*/>*/}
-				{/*<Anchor*/}
-				{/*	color="light-6" href="https://bemfilkom.ub.ac.id/apps/siperat" label="SIPERAT" icon={<Globe/>}*/}
-				{/*	target="_blank"*/}
-				{/*/>*/}
+				<Anchor
+					href="http://bemfilkom.ub.ac.id/2019" label="Atmabara 2019"
+					icon={<LinkNext/>} target="_blank"
+				/>
+				<Anchor
+					href="http://bemfilkom.ub.ac.id/2018" label="Adhitakarya 2018"
+					icon={<LinkNext/>} target="_blank"
+				/>
 			</Box>
 			<Box
 				justify="start"

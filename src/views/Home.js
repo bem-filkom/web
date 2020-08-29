@@ -24,7 +24,7 @@ const Home = () => {
 					background={{
 						"color": "acc-9",
 						"dark": true,
-						"opacity": "strong"
+						"opacity": "0.5"
 					}}
 					align="center"
 					alignContent="center"
@@ -83,7 +83,7 @@ const Home = () => {
 					height={{"min": "medium"}}
 				/>
 				<Box basis="1/3">
-					<Paragraph size="small" className="poppify" fill style={{"textAlign": "justify"}}>
+					<Paragraph size="small" fill style={{"textAlign": "justify"}}>
 						<Text weight="bold" size="small" color="acc-9">
 							Assalamu alaikum wr wb. Shalom. Om Swastyastu. Namo Buddhaya Rahayu. Salam kebajikan untuk
 							kita semua.<br/><br/>

@@ -12,15 +12,15 @@ import "normalize.css";
 import "./style.css";
 
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./container/Home";
-import VisiMisi from "./container/VisiMisi";
-import StrukturKabinet from "./container/Kabinet/Struktur";
-import KemenBiro from "./container/Kabinet/KemenBiro";
+import Home from "./views/Home";
+import VisiMisi from "./views/VisiMisi";
+import StrukturKabinet from "./views/Kabinet/Struktur";
+import KemenBiro from "./views/Kabinet/KemenBiro";
 import Footer from "./components/Footer/Footer";
-import Error404 from "./container/Error404";
+import Error404 from "./views/Error404";
 import ScrollToTop from "./components/ScrollToTop";
 
-// import ComingSoon from "./container/ComingSoon";
+// import ComingSoon from "./views/ComingSoon";
 
 //merge default theme and BEM theme
 const bemTheme = deepMerge(grommet, elmaTheme);

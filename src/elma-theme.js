@@ -3,7 +3,7 @@ export const elmaTheme = {
 	"global": {
 		// font body text
 		"font": {
-			"family": "'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+			"family": "'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
 		},
 		"colors": {
 			"icon": {
@@ -34,20 +34,20 @@ export const elmaTheme = {
 			"selected": "brand",
 			"text": {
 				"dark": "#f8f8f8",
-				"light": "#444444"
+				"light": "#2b2b2b"
 			},
 			
-			// WARNA TEMA V2	
+			// WARNA TEMA V2
 			"acc-1":"#FFE3EE",//pink lebih muda
 			"acc-2":"#bfe0f1",//biru lebih muda
 			"acc-3":"#FFAFCF",//pink muda
 			"acc-4":"#77b1de",//biru muda
-			"acc-5":"#EFD5B8",//coklat krem
+			"acc-5":"#cfd2c0",//coklat krem
 			"acc-6":"#414A50",//Grey blue
 			"acc-7":"#000000",//hitam
 			"acc-8":"#FFFFFF",//putih
-			"acc-9":"#ae4f76",//putih
-			"acc-10":"#285c85",//putih
+			"acc-9":"#c25d87",//putih
+			"acc-10":"#0A3955",//putih
 
 			// WARNA TEMA BEM
 			"accent-1": "#C9B79C",

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html, body {
     scroll-padding-top: 100px;
@@ -16,12 +16,12 @@ html, body {
     padding-bottom: 1em;
     -webkit-box-shadow: 0 4px 14px 3px rgba(0, 0, 0, 0.30);
     box-shadow: 0 4px 14px 3px rgba(0, 0, 0, 0.30);
-    background-color: rgba(34, 83, 121, 0.9) !important;
-    backdrop-filter: blur(4px)
+    background-color: rgb(10, 57, 85) !important;
+    /*backdrop-filter: blur(4px)*/
 }
 
 .navbar-image {
-    filter: drop-shadow(0 0 15px #bfe0f1);
+    filter: drop-shadow(0 0 5px #000000);
 }
 
 .navbar-title {
@@ -31,7 +31,7 @@ html, body {
 }
 
 .landing-title {
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 5px 20px rgb(33, 27, 32);
 }
 
 .ig-post {

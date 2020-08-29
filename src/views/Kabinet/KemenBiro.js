@@ -2,7 +2,6 @@ import React from "react";
 import {Helmet} from "react-helmet";
 import {Box, Heading, Image, Text} from "grommet";
 import {Redirect, useParams} from "react-router";
-import ReactHtmlParser from "react-html-parser";
 
 import {kemenbiroList} from "./kemenbiro-list";
 
@@ -137,7 +136,7 @@ const KemenBiro = () => {
 												textAlign="center"
 												size="small"
 											>
-												{ReactHtmlParser(item)}
+												{item}
 											</Text>
 										</Box>
 										<Box>
@@ -147,7 +146,7 @@ const KemenBiro = () => {
 												size="medium"
 												color="black"
 											>
-												{ReactHtmlParser(kemenbiro.bph[index])}
+												{kemenbiro.bph[index]}
 											</Text>
 										</Box>
 									</Box>
