@@ -76,7 +76,7 @@ function Navbar() {
 				direction="row-responsive" gap="small" align="center" alignContent="center" alignSelf="center"
 				className={isOpened ? "navbar-menu opened" : "navbar-menu"} pad="none" margin="none"
 			>
-				<NavbarButton extern disabled text="Coming Soon"/>
+				<NavbarButton path="/filkompedia/" text="Filkompedia"/>
 				<NavbarDropButton disabled text="Coming Soon">
 					{/*<NavbarButton extern path="/apps/siperat/" text="SIPERAT"/>*/}
 					{/*<NavbarButton extern path="/apps/bismit/" text="Bismit Apps"/>*/}
