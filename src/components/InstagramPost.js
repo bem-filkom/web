@@ -18,8 +18,9 @@ const InstagramPost = () => {
 			setData(res);
 			setIsLoading(false);
 		}
-		
-		fetchData();
+		fetchData().catch(e => {
+			setIsLoading(true);
+		});
 	}, []);
 	
 	return (

@@ -79,10 +79,13 @@ const FilkompediaDetails = () => {
 				round={{"size": "small", "corner": "bottom"}}
 			>
 				<Box justify="center">
-					<Heading className="headingMon" size="30px" level="2" textAlign="center" color="acc-7">
+					<Heading size="34px" margin={{bottom: "none"}} level="2" textAlign="center" color="acc-7">
 						FILKOMPEDIA
 					</Heading>
-				</Box> 
+					<Heading size="20px" margin={{top: "small"}} level="3" textAlign="center" color="acc-7">
+						Ensiklopedia Lembaga FILKOM
+					</Heading>
+				</Box>
             </Box>
 
             <Box
@@ -110,17 +113,17 @@ const FilkompediaDetails = () => {
 
 					<Box direction="column" fill="horizontal" background="none">
 						<Box direction="row-responsive" alignSelf="center">
-							<Box background="none" align="center"> 	
+							<Box background="none" align="center">
 								<Box alignSelf="center" height="250px" width="300px" >
 									<Image
 										fit="contain"
-										src={`/assets/logoLembaga/${lembaga.id}.png`}	
+										src={`/assets/logoLembaga/${lembaga.id}.png`}
 									/>
 								</Box>
 
 								<Box direction="column" align="center" pad={{ vertical: "small", horizontal: "medium" }} width="medium">
 									<Heading className="headingMon" size="25px" level="1" textAlign="center" color="acc-10">
-										Program Kerja
+										Program Kerja Unggulan
 									</Heading>
 									<Box
 									direction="column-responsive"
@@ -160,7 +163,7 @@ const FilkompediaDetails = () => {
 										>
 											{isSocmed1 && (<>
 												<Anchor
-													classname="notClickable"
+													className="notClickable"
 													href="" label={lembaga.sekret}
 													icon={<Home/>} target="_blank"
 												/>
@@ -173,31 +176,31 @@ const FilkompediaDetails = () => {
 											</>)}
 											{isSocmed3 && (<>
 												<Anchor
-													href="" label={lembaga.line} target="_blank"
+													href={`https://line.me/ti/p/${lembaga.line}`} label={lembaga.line} target="_blank"
 													icon={<img src="/assets/linelogo.png" className="acc-6 whitify" style={{"width": 24}} alt="LINE"/>}
 												/>
 											</>)}
 											{isSocmed4 && (<>
 												<Anchor
-													href="" label={lembaga.insta}
+													href={`https://instagram.com/${lembaga.insta}`} label={lembaga.insta}
 													icon={<Instagram/>} target="_blank"
 												/>
 											</>)}
 											{isSocmed5 && (<>
 												<Anchor
-													href="" label={lembaga.facebook}
+													href={`https://facebook.com/${lembaga.facebook}`} label={lembaga.facebook}
 													icon={<Facebook />} target="_blank"
 												/>
 											</>)}
 											{isSocmed6 && (<>
 												<Anchor
-													href="" label={lembaga.twitter}
+													href={`https://twitter.com/${lembaga.twitter}`} label={lembaga.twitter}
 													icon={<Twitter />} target="_blank"
 												/>
 											</>)}
 											{isSocmed7 && (<>
 												<Anchor
-													href="" label={lembaga.youtube}
+													href={`https://www.youtube.com/c/${lembaga.youtube}`} label={lembaga.youtube}
 													icon={<Youtube />} target="_blank"
 												/>
 											</>)}

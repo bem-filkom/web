@@ -187,8 +187,8 @@ html, body {
 
 /* Filkompedia */
 .notClickable {
-    pointer-events: none;
-    cursor: default;
+    pointer-events: none !important;
+    cursor: default !important;;
     text-decoration: none;
 }
 

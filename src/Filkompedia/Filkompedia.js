@@ -9,7 +9,7 @@ const Filkompedia = () => {
     return (
         <Box>
 			<Helmet>
-				<title>Filkompedia</title>
+				<title>FILKOMPEDIA</title>
 			</Helmet>
 			<Box
 				height={{min: "xsmall"}}
@@ -20,10 +20,13 @@ const Filkompedia = () => {
 				round={{"size": "small", "corner": "bottom"}}
 			>
 				<Box justify="center">
-					<Heading className="headingMon" size="34px" level="2" textAlign="center" color="acc-7">
+					<Heading size="34px" margin={{bottom: "none"}} level="2" textAlign="center" color="acc-7">
 						FILKOMPEDIA
 					</Heading>
-				</Box> 
+					<Heading size="20px" margin={{top: "small"}} level="3" textAlign="center" color="acc-7">
+						Ensiklopedia Lembaga FILKOM
+					</Heading>
+				</Box>
 			</Box>
 
 			<Box
@@ -114,7 +117,7 @@ const Filkompedia = () => {
 						margin={{horizontal:"55px", vertical: "none"}}
 						pad={{horizontal: "medium", vertical: "none"}}
 						gap="xsmall"
-					>	
+					>
 						<LembagaDisplay index="0" />
 						<LembagaDisplay index="1" />
 						<LembagaDisplay index="2" />

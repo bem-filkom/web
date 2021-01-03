@@ -77,11 +77,11 @@ function Navbar() {
 				className={isOpened ? "navbar-menu opened" : "navbar-menu"} pad="none" margin="none"
 			>
 				<NavbarButton path="/filkompedia/" text="Filkompedia"/>
-				<NavbarDropButton disabled text="Coming Soon">
-					{/*<NavbarButton extern path="/apps/siperat/" text="SIPERAT"/>*/}
-					{/*<NavbarButton extern path="/apps/bismit/" text="Bismit Apps"/>*/}
-					{/*<NavbarButton extern path="/apps/injam/" text="Integrasi Peminjaman"/>*/}
-				</NavbarDropButton>
+				{/*<NavbarDropButton disabled text="Coming Soon">*/}
+				{/*	/!*<NavbarButton extern path="/apps/siperat/" text="SIPERAT"/>*!/*/}
+				{/*	/!*<NavbarButton extern path="/apps/bismit/" text="Bismit Apps"/>*!/*/}
+				{/*	/!*<NavbarButton extern path="/apps/injam/" text="Integrasi Peminjaman"/>*!/*/}
+				{/*</NavbarDropButton>*/}
 			</Box>
 		</Header>
 	);
